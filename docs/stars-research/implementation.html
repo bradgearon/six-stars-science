@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="dark" name="color-scheme"/><meta content="#090f19" name="theme-color"/><meta content="Physical setup, electronics, staged program releases, schematics, trial matrix, budgets, controls and data contracts." name="description"/><meta content="Implementation field manual · ChristEye Research Atlas" property="og:title"/><meta content="Physical setup, electronics, staged program releases, schematics, trial matrix, budgets, controls and data contracts." property="og:description"/><meta content="website" property="og:type"/><link href="assets/cat-mark.svg" rel="icon" type="image/svg+xml"/><link href="assets/style.css" rel="stylesheet"/><title>Implementation field manual · ChristEye Research Atlas</title></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="site-head"><div class="nav-wrap"><a aria-label="ChristEye Research Atlas home" class="brand" href="index.html"><img alt="" height="40" src="assets/cat-mark.svg" width="40"/><div><strong>ChristEye</strong><span>Research atlas · CE / 001</span></div></a><button aria-controls="nav-links" aria-expanded="false" class="menu-button" id="menu-button">☰ Menu</button><nav aria-label="Primary navigation" class="nav-links nav-grouped" id="nav-links"><a href="index.html">Overview</a><details class="nav-dropdown"><summary>Design</summary><div class="nav-sub"><a href="architecture.html">Architecture</a><a href="theory.html">Theory &amp; concepts</a><a href="equations.html">Complete equations</a></div></details><details class="nav-dropdown"><summary>Build &amp; test</summary><div class="nav-sub"><a aria-current="page" href="implementation.html">Implementation manual</a><a href="training.html">Training &amp; gates</a><a href="notebook.html">Research notebook</a></div></details><a href="six-stars.html">Six Stars</a><a href="research.html">References</a><a class="nav-notebook" href="notebook.html">Open notebook ↗</a></nav></div></header>
+<main id="main"><div class="page-hero"><div class="wrap"><div class="eyebrow">06 / ChristEye field manual</div><h1>Implementation <span class="gradient-text">field manual.</span></h1><p class="lead">The complete staged system plan: startup, electronics, interfaces, sourcing, qualification, experiment execution and evidence records. Use this alongside the editable notebook.</p><div class="pill-row"><span class="pill">RESEARCH DESIGN / NO LIVE VALIDATION</span><span class="pill">REVISION 2 · 13 NOV 2026</span><span class="pill">STATIC + LOCAL DATA</span></div></div></div><div class="wrap page-layout"><article class="content"><div class="note"><b>What exists today:</b> a research design, a source-controlled launch package and software test fixtures. This is not a working validated biological machine or released hardware SOP. Cell handling and live electrical parameters must be supplied and approved by the qualified laboratory and hardware vendor. <a href="notebook.html">Open working notebook</a>.</div>
+<h2 id="implementation-overview">1. Target implementation and release boundaries</h2><p>The first deliverable is an independently observable, cell-free host and control harness (R0), followed by a single cultured neuronal–astrocytic learner (R1). A separately trained observer or recipient is introduced in R2; a support-policy cartridge is a later R3 candidate. Evaluate one device claim at a time: a working instrument, acquired capability, delayed retention and incremental benefit are separate accomplishments.</p>
+<div class="milestone-deck"><div class="milestone"><small>R0 · SOFTWARE</small><h3>Digital &amp; electrical simulation</h3><p>Defined task, isolated evaluator, time synchronization, test-load permit circuit, audit trail, no culture.</p><a href="notebook.html?trial=T00">T00 → T01</a></div><div class="milestone"><small>R1 · CORE</small><h3>One biological learner</h3><p>Independent source lot, characterized interface, bounded feedback, replication and delayed task retention.</p><a href="notebook.html?trial=T03">T02 → T05</a></div><div class="milestone"><small>R2 · PAIRED</small><h3>Observer &amp; recipient</h3><p>Independent trained observer or teacher–recipient pair with removable electronic join and isolation test.</p><a href="notebook.html?trial=T08">T06 → T08 / T11</a></div><div class="milestone"><small>R3 · EXPAND</small><h3>Support and replication</h3><p>Measured marginal support benefit, interference protection, additional modules only if justified.</p><a href="notebook.html?trial=T09">T09 → T17</a></div></div>
+<h2 id="roles">2. Architecture: nine roles, distinct safety boundaries</h2><div class="table-scroll"><table><thead><tr><th>Identity</th><th>Role</th><th>Qualification boundary</th></tr></thead><tbody><tr><td>P · Source</td><td>Bank, maturation and traceable cell preparation</td><td>Qualified lab, source consent, lot documentation</td></tr><tr><td>C · Core</td><td>Neuronal–astrocytic learning cartridge</td><td>G1–G4; own medium and electrode map</td></tr><tr><td>O · Observer</td><td>Separately trained encoded-telemetry learner</td><td>T06/T07; cannot read protected ground truth</td></tr><tr><td>S · Support</td><td>Later learned routing/rest/review proposals</td><td>T09; cannot command hardware directly</td></tr><tr><td>B · Recipient</td><td>Teaching and independent recall comparator</td><td>T11; isolated post-bridge performance</td></tr><tr><td>G · Local glia</td><td>Astrocytes inside each characterized cartridge</td><td>Selective contribution remains an experiment</td></tr><tr><td>H · Host</td><td>Encoder, artifact mask, timing, logging, bridge and coordinator</td><td>R0 simulations and versioned software</td></tr><tr><td>L · Limit controller</td><td>Hardware-independent permission and fault detection</td><td>Cannot be outvoted by learner score</td></tr><tr><td>E · Evaluator</td><td>Protected target, blinded analysis and confirmation ledger</td><td>Never exposes sealed targets during evaluation</td></tr></tbody></table></div><h2 id="schematics">3. Schematic set and physical partitions</h2><p>The supplied six-sheet vector drawing set is included locally. These are engineering review schematics, not verified fabrication releases. The commercial MEA supplies proprietary electrode-drive hardware; the prototype permit board only grants a low-voltage logical request. A qualified vendor-side inhibit is a separate unresolved dependency.</p><div class="schematic-grid"><figure class="schematic-card"><a href="assets/schematics/sheet-01.svg" rel="noopener" target="_blank"><img alt="Engineering drawing sheet 1, System wiring and communication boundaries" loading="lazy" src="assets/schematics/sheet-01.svg"/></a><figcaption><span>CE-ENG / SHEET 01</span>System wiring and communication boundaries · <a href="assets/schematics/sheet-01.svg" rel="noopener" target="_blank">Full SVG</a></figcaption></figure><figure class="schematic-card"><a href="assets/schematics/sheet-02.svg" rel="noopener" target="_blank"><img alt="Engineering drawing sheet 2, Cartridge carrier and optical/service section" loading="lazy" src="assets/schematics/sheet-02.svg"/></a><figcaption><span>CE-ENG / SHEET 02</span>Cartridge carrier and optical/service section · <a href="assets/schematics/sheet-02.svg" rel="noopener" target="_blank">Full SVG</a></figcaption></figure><figure class="schematic-card"><a href="assets/schematics/sheet-03.svg" rel="noopener" target="_blank"><img alt="Engineering drawing sheet 3, Permit board reference logic diagram" loading="lazy" src="assets/schematics/sheet-03.svg"/></a><figcaption><span>CE-ENG / SHEET 03</span>Permit board reference logic diagram · <a href="assets/schematics/sheet-03.svg" rel="noopener" target="_blank">Full SVG</a></figcaption></figure><figure class="schematic-card"><a href="assets/schematics/sheet-04.svg" rel="noopener" target="_blank"><img alt="Engineering drawing sheet 4, Power distribution, connectors and net assignments" loading="lazy" src="assets/schematics/sheet-04.svg"/></a><figcaption><span>CE-ENG / SHEET 04</span>Power distribution, connectors and net assignments · <a href="assets/schematics/sheet-04.svg" rel="noopener" target="_blank">Full SVG</a></figcaption></figure><figure class="schematic-card"><a href="assets/schematics/sheet-05.svg" rel="noopener" target="_blank"><img alt="Engineering drawing sheet 5, Child-mesh controlled routing diagram" loading="lazy" src="assets/schematics/sheet-05.svg"/></a><figcaption><span>CE-ENG / SHEET 05</span>Child-mesh controlled routing diagram · <a href="assets/schematics/sheet-05.svg" rel="noopener" target="_blank">Full SVG</a></figcaption></figure><figure class="schematic-card"><a href="assets/schematics/sheet-06.svg" rel="noopener" target="_blank"><img alt="Engineering drawing sheet 6, Bench commissioning and release checks" loading="lazy" src="assets/schematics/sheet-06.svg"/></a><figcaption><span>CE-ENG / SHEET 06</span>Bench commissioning and release checks · <a href="assets/schematics/sheet-06.svg" rel="noopener" target="_blank">Full SVG</a></figcaption></figure></div><h3 id="interface-contracts">Connection contracts</h3><div class="table-scroll"><table><thead><tr><th>IF</th><th>Connection</th><th>Required guarantee</th></tr></thead><tbody><tr><td>IF-01</td><td>Headstage ↔ hub</td><td>Vendor cable; sampled neural data, channel map, delivered stimulation, instrument faults</td></tr><tr><td>IF-02</td><td>Hub ↔ H host</td><td>Ordered events, acquisition clock, measured latency and stored raw data</td></tr><tr><td>IF-03</td><td>E evaluator → scorer</td><td>Training truth only after response closure; confirmation truth never visible to trainer</td></tr><tr><td>IF-04</td><td>H host ↔ L limiter</td><td>Sequence-numbered health and accepted profile; stale state prevents stimulation</td></tr><tr><td>IF-05</td><td>Permit board → vendor adapter</td><td>Prototype 3.3 V logic inhibit at test load; global vendor-enforced suppression unverified</td></tr><tr><td>IF-06</td><td>Imaging/sensors → H</td><td>Captured timestamp, sensor calibration, location and uncertainty</td></tr><tr><td>IF-07</td><td>Support sensors → H/L</td><td>Measured value, units, freshness, valid/invalid status</td></tr><tr><td>IF-08</td><td>Fluid source → cartridge</td><td>Independent identified liquid path and waste; no shared liquid in initial joins</td></tr></tbody></table></div><h3 id="permit-board">Independent permit-board qualification</h3><p>The R0 reference design proposes Pico H + external watchdog + manual rearm latch + physical fault loop, with command permit withheld until a successful complete control cycle. Its nominal software configuration proposes a 50 ms host heartbeat, 150 ms stale timeout and nominal 200 ms supervisor. <strong>These are bench design parameters, not verified biological safety limits.</strong> Test high, low, open, unpowered and alternate-client conditions at the final receiving interface before any live use. Never assume a trigger input is a global inhibit.</p>
+<pre><code>power-on → HOLD (output low)
+manual rearm + valid profile + fresh host + sensor OK
+   → permit request → vendor-enforced bounded output
+STOP / COVER / watchdog / host loss / stale sensor
+   → immediate inhibit request → latched FAULT → manual rearm
+
+NO live profile released by this website.
+NO remote API may override Heart limits.</code></pre>
+<h2 id="setup">4. Setup sequence and acceptance artifacts</h2><p>Work proceeds by evidence gates, not a calendar promise. The checkboxes below save locally and share state with your notebook. Completing a checkbox records administrative progress only; it does not certify a release gate.</p><div class="implementation-checklists" id="implementation-checklists"></div>
+<h2 id="receiving">5. Qualified laboratory and receiving environment</h2><p>The launch package assumes a company-led program partnered with a qualified human-cell research lab. Laboratory authorities specify permissible cell sources, medium/SOP details, viability thresholds, assay controls, incident handling and local biosafety processes. Keep culture care independent of score, reward and host training availability. Source lineage and role semantics are not interchangeable: spinal identity is to be measured, not inferred from the metaphor of a Tree.</p><div class="table-scroll"><table><thead><tr><th>Receipt record</th><th>Required fields</th><th>Qualification owner</th></tr></thead><tbody><tr><td>Cell source</td><td>cell source ID; consent/provenance permissions; vendor certificate; batch; release result</td><td>Culture lead</td></tr><tr><td>Culture service</td><td>lab SOP/version; identified medium/waste; contamination/service log; physiological measurement</td><td>Lab quality</td></tr><tr><td>Geometry</td><td>chip model; carrier datum; electrode map; optics; measured tolerance and access</td><td>Engineering lead</td></tr><tr><td>Interface</td><td>selected channels; SNR; artifact mask; evoked response; command delivery and latency</td><td>Electrophysiology</td></tr><tr><td>Trial readiness</td><td>randomized arms; frozen primary outcome; sample unit and exclusions</td><td>Analysis lead</td></tr><tr><td>Change control</td><td>software/codebook/limits hash; operator; changed component; reason; requalification</td><td>Program lead</td></tr></tbody></table></div><h2 id="task-codebook">6. Core task, truth table and measurable learning</h2><p>The declared first task is a deliberately small symbolic discrimination: AB and BA produce opposite responses under C0 versus C1; AA and BB require HOLD. Unknown/missing context yields UNRESOLVED; corrupt telemetry yields INVALID. Treat the eight valid context/sequence combinations as a truth-table environment, not as evidence of human language comprehension.</p><div class="table-scroll"><table><thead><tr><th>Context</th><th>Input AB</th><th>Input BA</th><th>Input AA / BB</th><th>Missing or unknown</th></tr></thead><tbody><tr><td>C0</td><td>X</td><td>Y</td><td>HOLD</td><td>UNRESOLVED</td></tr><tr><td>C1</td><td>Y</td><td>X</td><td>HOLD</td><td>UNRESOLVED</td></tr></tbody></table></div><div class="flow-labels"><span>Encode qualified cue</span><span class="arrow">→</span><span>Measure &amp; mask artifact</span><span class="arrow">→</span><span>Frozen decode / abstain</span><span class="arrow">→</span><span>Outcome after closure</span><span class="arrow">→</span><span>Qualified feedback</span><span class="arrow">→</span><span>Feedback-off probe</span></div><p>Use development data to select encoder, artifact handling and decoder. Then freeze these before confirmation. Report absolute acquisition and 45-minute / 24-hour retention, not merely an unstable ratio. A training count per electrode is not a count of independent samples. Revisit <a href="equations.html#eq-e08">E08 eligibility</a>, <a href="equations.html#eq-e09">E09 contingent feedback</a>, <a href="equations.html#eq-e12">E12 delayed retention</a> and <a href="equations.html#eq-e29">E29 nested observations</a>.</p>
+<h2 id="study-map">7. The complete T00–T17 trial map</h2><p>All 18 trials below are imported from <code>02_Trials/trials.json</code>. All begin <strong>PLANNED_NOT_RUN</strong>. The experiment notebook tracks status and run-level metrics separately; checklist completion cannot convert a trial into a scientific success.</p><div class="table-scroll"><table><thead><tr><th>Trial</th><th>Question/phase</th><th>Prerequisite</th><th>Primary outcome</th></tr></thead><tbody><tr><td><a href="notebook.html?trial=T00">T00</a></td><td>Software contracts</td><td>none</td><td>All required invariants pass</td></tr><tr><td><a href="notebook.html?trial=T01">T01</a></td><td>Permit-board commissioning</td><td>T00</td><td>Measured suppression and manual rearm</td></tr><tr><td><a href="notebook.html?trial=T02">T02</a></td><td>Culture/interface qualification</td><td>T01 and P01-P20 as applicable</td><td>G1-G3 released</td></tr><tr><td><a href="notebook.html?trial=T03">T03</a></td><td>Core acquisition</td><td>T02</td><td>Learning contrast with uncertainty</td></tr><tr><td><a href="notebook.html?trial=T04">T04</a></td><td>Delayed retention</td><td>T03</td><td>Absolute retained scores and arm contrasts</td></tr><tr><td><a href="notebook.html?trial=T05">T05</a></td><td>Spaced learning</td><td>T03</td><td>Delayed difference at equal information/exposure</td></tr><tr><td><a href="notebook.html?trial=T06">T06</a></td><td>Observer classification</td><td>T02</td><td>Held-out O1 macro recall and false alerts</td></tr><tr><td><a href="notebook.html?trial=T07">T07</a></td><td>Observer early warning</td><td>T06</td><td>Lead time and precision/recall</td></tr><tr><td><a href="notebook.html?trial=T08">T08</a></td><td>Observer joining</td><td>T04 and T06</td><td>Added benefit with protected capability</td></tr><tr><td><a href="notebook.html?trial=T09">T09</a></td><td>Support learner</td><td>T08</td><td>Marginal action-selection benefit</td></tr><tr><td><a href="notebook.html?trial=T10">T10</a></td><td>Affect-inspired weights</td><td>T00; T08 before living deployment</td><td>Held-out utility/calibration and noninferiority</td></tr><tr><td><a href="notebook.html?trial=T11">T11</a></td><td>Independent teaching</td><td>T04</td><td>B-only delayed result after verified separation</td></tr><tr><td><a href="notebook.html?trial=T12">T12</a></td><td>Astrocytic predictive contribution</td><td>T04</td><td>Held-out loss improvement</td></tr><tr><td><a href="notebook.html?trial=T13">T13</a></td><td>Selective astrocytic mechanism</td><td>T12 and targeted assay qualification</td><td>Selective causal effect with target engagement</td></tr><tr><td><a href="notebook.html?trial=T14">T14</a></td><td>Diversity and renewal</td><td>T08</td><td>Contribution minus old-task cost</td></tr><tr><td><a href="notebook.html?trial=T15">T15</a></td><td>Physical joining</td><td>T08 and new bridge qualification</td><td>Route-specific function and quantified leakage</td></tr><tr><td><a href="notebook.html?trial=T16">T16</a></td><td>Mesh chain topology</td><td>T00; T08 before living chain</td><td>Net utility, latency and ancestry integrity</td></tr><tr><td><a href="notebook.html?trial=T17">T17</a></td><td>Independent replication</td><td>frozen selected candidate</td><td>Prospective confirmation of scoped claim</td></tr></tbody></table></div><h2 id="execution">8. Experiment execution and analysis</h2><div class="steps"><div class="step"><h3>Preflight &amp; independent eligibility</h3><p>Verify source, actual sensor validity, controller permission, isolation of evaluator, current configuration hash and assigned arm. Qualify exclusion criteria without looking at the outcome.</p></div><div class="step"><h3>Execute fixed candidate</h3><p>Log both requested and delivered events and preserve artifact masks, timing, invalid opportunities and any faults. Keep basic support independent of task success.</p></div><div class="step"><h3>Confirm without leakage</h3><p>Disable teaching feedback, use the locked decoder and frozen thresholds, separate recipient/teacher routes when required, and analyze only new preparations for confirmation.</p></div><div class="step"><h3>Decide and archive</h3><p>Report endpoint with uncertainty at preparation/dyad/triad level, protected old-task cost, dropouts, resource cost, and negative outcomes. Record change request for the next candidate rather than rewriting the old outcome.</p></div></div>
+<h3 id="proposed-targets">Illustrative project targets (not measured results)</h3><div class="table-scroll"><table><thead><tr><th>Measure</th><th>Initial proposal</th><th>Required caution</th></tr></thead><tbody><tr><td>Core acquisition</td><td>0.80 macro-recall target</td><td>No measured expectation; compare biologically matched controls</td></tr><tr><td>24-hour retention</td><td>0.75 macro-recall target</td><td>Absolute delayed endpoint, not just a retention ratio</td></tr><tr><td>7-day retention</td><td>0.70 exploratory target</td><td>May be infeasible; prespecified horizon</td></tr><tr><td>Learning contrast</td><td>≥0.10 vs strongest control</td><td>Use independent preparations for uncertainty</td></tr><tr><td>Protected old tasks</td><td>Noninferiority margin 0.05</td><td>Lower confidence bound on change &gt; −0.05</td></tr><tr><td>O1 observer</td><td>0.80 macro recall; ≤5% nominal false alerts</td><td>Also report alerts/hour and UNKNOWN coverage</td></tr><tr><td>Joined benefit</td><td>0.05 improvement or predeclared resource benefit</td><td>Must compare to matched digital/fixed policy</td></tr><tr><td>First pilot</td><td>T03 proposes six preparations per arm</td><td>Pilot is not a powered independent confirmation</td></tr></tbody></table></div><h2 id="materials">9. Procurement, budget and biological records</h2><p>These are planning placeholders from the supplied launch file—not supplier quotes, laboratory instructions or binding estimates. Use your notebook to record actual quotes, lot identifiers, and deviations. Hardware interface confirmations and measured culture qualification should control purchases.</p><div class="table-scroll"><table><thead><tr><th>Budget category</th><th>Low (USD)</th><th>Base (USD)</th><th>High (USD)</th></tr></thead><tbody><tr><td>People</td><td>$210,000</td><td>$360,000</td><td>$540,000</td></tr><tr><td>Lab and partner services</td><td>$50,000</td><td>$90,000</td><td>$150,000</td></tr><tr><td>MEA and optics hardware/access</td><td>$90,000</td><td>$180,000</td><td>$300,000</td></tr><tr><td>Biological materials and assays</td><td>$50,000</td><td>$100,000</td><td>$180,000</td></tr><tr><td>Host/storage/engineering</td><td>$20,000</td><td>$30,000</td><td>$60,000</td></tr><tr><td>Contracts/quality/insurance</td><td>$20,000</td><td>$40,000</td><td>$70,000</td></tr></tbody></table></div><div class="note"><b>Illustrative 6-month budget:</b> low $550,000; base $1,000,000; high $1,625,000, including a 25% contingency. Capture real invoices and quotes in the notebook as evidence instead of assuming these planning allowances are current prices.</div><h2 id="records">10. Data provenance and future API integration</h2><p>Each record should contain a stable ID, UTC timestamp, module/cartridge IDs, batch and lot, experimental arm, task and codebook versions, locked analysis plan, actual measurement, artifacts and interpretation. The browser notebook persists structured JSON and attachment blobs locally. The future API adapter is deliberately disabled, and cannot submit data until an endpoint and authentication are configured.</p><pre><code>{
+  "schema": "christ-eye.workspace.v2",
+  "trialId": "T04",
+  "preparationId": "PREP-...",
+  "batchId": "BATCH-...",
+  "runId": "RUN-...",
+  "arm": "contingent | yoked | control",
+  "metrics": {"macroRecall": null, "invalidCount": null},
+  "sourceHash": "...",
+  "evidence": "unverified | candidate | confirmed | failed",
+  "attachments": ["ATTACHMENT-ID"]
+}</code></pre><p>See <a href="notebook.html#backups">export/import controls</a> and the accompanying <code>API_INTEGRATION.md</code> for later server-side persistence. Protect personally sensitive information; the static site has no authentication and a shared browser is not a laboratory-grade records system.</p>
+<h2 id="protocol-appendices">11. Full source-guided protocols and implementation appendices</h2><p>This section reproduces the detailed planning texts from the uploaded Project Launch Package v1.0 as readable, locally hosted appendices. They supplement the interactive checklist and T00–T17 experiment records above. These are proposed study contracts and research preparation requirements, not verified live-tissue SOPs or proof that the machine has been built.</p><details class="archive-accordion protocol-appendix"><summary>Appendix 1 · Complete 18-trial experimental plan</summary><div class="archive-body"><p>Contains the study rationale, T00–T17 matrix, curriculum, schedule, baseline arms, masking rules, outcomes, analysis and stopping conditions.</p><p class="smallprint">Source: 02_Trials/Trials_Plan.md · ChristEye Project Launch Package v1.0</p><h4>CE-TRIAL-001: staged experimental plan</h4>
+<h4>Objective and trial unit</h4>
+<p>Determine whether a qualified human-derived neuronal–astrocytic core acquires retained context-dependent capability; whether a separate observer learns useful monitoring; and whether joining trained child modules improves the core without unacceptable loss. Test the affect-inspired arbitration policy first in software, then as a host-side control comparison. A later biological mechanism study is a separate claim.</p>
+<p>The biological unit is an independently prepared culture. An experimental dyad contains two independent cultures. A triad contains three. Trials, electrodes, sorted units, imaging regions and repeated days are nested observations. Source line, preparation batch, operator, platform configuration and day are recorded. Shared medium preparation or source pools are blocking factors, not hidden independent replication.</p>
+<p>The <code>trials.json</code> file is the machine-readable trial register. No row is marked run or passed. Enrollment counts are planning proposals or null; confirmation sizes require pilot variance and the selected estimand. Every trial has prerequisites, arms, outcomes, exclusions, stopping rules and a decision.</p>
+<h4>Sequential program</h4>
+<table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stage</th>
+<th>Primary question</th>
+<th>Required comparison</th>
+<th>Unit and decision</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T00</td>
+<td>Are data, targets and commands separated?</td>
+<td>Correct routes, leakage attempts, stale events, replay</td>
+<td>Software episodes; pass invariant checks</td>
+</tr>
+<tr class="even">
+<td>T01</td>
+<td>Does the permit circuit suppress output on faults?</td>
+<td>Normal arm, host loss, watchdog, open loop, reset</td>
+<td>Bench assemblies and repeated faults; measured electrical release</td>
+</tr>
+<tr class="odd">
+<td>T02</td>
+<td>Is the chosen culture/interface usable?</td>
+<td>Reference preparations and blank chip/material observations</td>
+<td>Proposed 6 independent preparations over at least 2 batches; feasibility only</td>
+</tr>
+<tr class="even">
+<td>T03</td>
+<td>Does contingent feedback improve the core?</td>
+<td>Contingent, yoked/exposure-matched, no-teaching</td>
+<td>Proposed pilot 6 preparations/arm; estimate effect and variation</td>
+</tr>
+<tr class="odd">
+<td>T04</td>
+<td>Does capability persist after rest?</td>
+<td>Immediate and delayed cue-only evaluation; probe-history control</td>
+<td>Separate or balanced cohorts at 45 min, 24 h, 7 d</td>
+</tr>
+<tr class="even">
+<td>T05</td>
+<td>Does spaced experience improve retention?</td>
+<td>Spaced vs massed at equal approved exposure and information</td>
+<td>Independent preparations; delayed outcome</td>
+</tr>
+<tr class="odd">
+<td>T06</td>
+<td>Does O learn state discrimination?</td>
+<td>Trained O, untrained O, feature-matched digital monitor</td>
+<td>Independent O and source episodes</td>
+</tr>
+<tr class="even">
+<td>T07</td>
+<td>Can O predict before the core fails?</td>
+<td>Pre-cutoff O vs digital predictor and shuffled labels</td>
+<td>Held-out episodes and later preparations</td>
+</tr>
+<tr class="odd">
+<td>T08</td>
+<td>Does joining O help C?</td>
+<td>C alone, trained O, untrained O, replayed O, digital O as feasible</td>
+<td>Independent dyads; protected-core retention</td>
+</tr>
+<tr class="even">
+<td>T09</td>
+<td>Does S improve support selection?</td>
+<td>Learned S vs fixed coordinator and action-matched schedule</td>
+<td>Independent triads; marginal contribution</td>
+</tr>
+<tr class="odd">
+<td>T10</td>
+<td>Do affect-inspired weights help?</td>
+<td>No weighting, reliability-only, full policy, shuffled history</td>
+<td>Software first; then matched biological-module deployments</td>
+</tr>
+<tr class="even">
+<td>T11</td>
+<td>Does B retain independently taught capability?</td>
+<td>B self-training, trained A, untrained A, replay, software teacher</td>
+<td>Independent A/B dyads; B-only delayed tests</td>
+</tr>
+<tr class="odd">
+<td>T12</td>
+<td>Do astrocyte features add information?</td>
+<td>Neuronal+environment model vs model adding astrocytic features</td>
+<td>Held-out preparations; predictive increment</td>
+</tr>
+<tr class="even">
+<td>T13</td>
+<td>Is a selected astrocyte mechanism causal?</td>
+<td>Targeted qualified comparison plus general-state and unrelated-task controls</td>
+<td>New experiment after T12/behavioral evidence</td>
+</tr>
+<tr class="odd">
+<td>T14</td>
+<td>Does diversity or renewal add value?</td>
+<td>One added subtype/module vs unchanged and retrained controls</td>
+<td>New independent preparations; contribution and cost</td>
+</tr>
+<tr class="even">
+<td>T15</td>
+<td>Does a physical bridge add value?</td>
+<td>Physical vs electronic and matched unjoined arrangements</td>
+<td>Separate build version; communication and independence</td>
+</tr>
+<tr class="odd">
+<td>T16</td>
+<td>Do chain depth and redundancy help?</td>
+<td>Depth 1/2/3, missing-link and duplicate-input cases</td>
+<td>Software first; biological chain only after dyads work</td>
+</tr>
+<tr class="even">
+<td>T17</td>
+<td>Can another batch/site reproduce the candidate?</td>
+<td>Frozen candidate and prespecified controls</td>
+<td>Independent confirmation, ideally another operator/site</td>
+</tr>
+</tbody>
+</table>
+<p>Do not run all arms at once. T03/T04 form the first biological campaign. T05 is justified if acquisition is credible but retention is inadequate. T06 may use recorded or simulated source histories before C is mature enough for joint trials. T13–T16 are later research, not prerequisites for beginning the company.</p>
+<h4>Core curriculum</h4>
+<p>The starting task uses contexts C0 and C1 and token sequences AB, BA, AA and BB. C0: AB→X and BA→Y. C1 reverses these responses. Repeated symbols require HOLD in either context. Missing context or an unknown token is UNRESOLVED at the interface; invalid recordings are INVALID, not a correct HOLD. This produces eight valid context/sequence combinations.</p>
+<p>Start with cue separability and sequence discrimination, then add context reversal, repeated-symbol controls, delayed retrieval and protected old relations. Human-defined meaning comes from the declared task and its counterexamples; words alone do not give cultured neurons human semantics. Later curricula may introduce multi-step conditional choices only after simpler retained capability is established.</p>
+<p>One development block proposes 64 balanced valid opportunities. Up to four blocks before a development probe is a bookkeeping default, subject to the preparation’s lower qualified exposure/session limit. The package contains no live stimulation amplitudes or timings. Each task event refers to an approved profile ID whose actual delivered waveform is recorded. Blank profile entries block operation.</p>
+<p>Feedback follows response closure, uses approved distinguishable conditions and remains within the same exposure envelope. A yoked control matches exposure without using its own outcome to select feedback. Randomize or counterbalance replay alignment: replay can accidentally correlate with a structured task. Verify actual feedback/outcome contingency rather than asserting mutual information equals zero by construction. No condition withholds basic support.</p>
+<h4>Train, check and improve</h4>
+<ol type="1">
+<li>Check G1–G3, support state, sensor freshness, configuration hash, storage, bridge state and allowed profiles. Record baseline.</li>
+<li>Train using only the training oracle. Record requested and delivered events and all invalid opportunities.</li>
+<li>Freeze encoder mappings, preprocessing and readout; disable teaching feedback for the development probe.</li>
+<li>Enter the assigned quiet or replay condition, then perform the scheduled delayed probe. Rest is not assumed to be sleep.</li>
+<li>Test protected old relations and classify failure: invalid interface, insufficient acquisition, loss after delay, context interference, state change or unresolved cause.</li>
+<li>Revise one principal factor or a preregistered factorial combination. Preserve the predecessor and its failures. Cap a campaign at three candidate revisions before a task/interface review.</li>
+<li>Freeze the selected candidate and evaluate once on sealed confirmation data and fresh preparations. A failed confirmation cannot be converted to success by tuning on its outcomes.</li>
+</ol>
+<p>Probes are experience. Compare repeated-probe schedules with a single delayed-probe cohort where retention is the claim. Delay measurements begin from a defined last teaching event and account for recovery from stimulation artifacts and service. A better score after service does not identify a restored memory mechanism.</p>
+<h4>Observer and support curricula</h4>
+<p>O1 receives encoded telemetry and distinguishes nominal state, route-review need, support-review need and unknown/missing observations. Begin with simulated or recorded operational faults, not tissue damage. Include quiet-but-valid cultures, missing recordings, slow-but-correct responses, novel contexts and benign large activity events.</p>
+<p>O2 predicts an outcome at a declared cutoff before the core’s scored response. Exclude the correct target, future response, retrospective normalization and post-response error flag. Hold out complete episodes and later days. A classifier given both a target and completed answer is an external checker, not an early-warning predictor.</p>
+<p>S receives permitted histories and proposes NO_CHANGE, REQUEST_REVIEW, DEFER_TASK or TRY_APPROVED_ROUTE. Rest scheduling can be added after timing is qualified. The coordinator decides whether to implement a proposal. Learning credit uses an independently measured effect on C and protected capabilities, with randomized permissible actions or action-matched controls. S does not change medium or generate new cells directly.</p>
+<h4>Outcomes and acceptance</h4>
+<p>The proposed primary core outcome is macro-averaged recall over X/Y/HOLD at 24 hours. Report 45-minute retention separately because transient improvement may disappear early. Report all contexts, raw accuracy, invalid/late/missing opportunities and absolute scores. Initial project targets remain 0.80 acquisition, 0.75 at 24 hours and 0.70 at seven days, with a proposed learning contrast of at least 0.10 versus the strongest relevant biological control. These are project targets, not measured expectations.</p>
+<p>Protected capability has a proposed noninferiority margin of 0.05. For change = new − old performance, the prespecified lower confidence bound must exceed −0.05. A nonsignificant difference is not preservation. Joined benefit proposes 0.05 improvement or a preregistered resource benefit at noninferior performance. Choose one primary objective before data collection.</p>
+<p>O1 targets 0.80 macro recall with false alerts on at most 5% of nominal episodes; also report false alerts/hour, alert duration and UNKNOWN use. O2 requires positive useful lead time and precision/recall beyond a feature-matched digital model at a frozen threshold. Evaluate calibration using held-out probabilities; a spike-count softmax is not automatically calibrated confidence.</p>
+<p>The Understanding report is a vector: acquisition, retention at each delay, generalization, interference, calibration, latency, availability and cost. Do not collapse it into a single metaphysical quantity. A biological learning result may be worthwhile even if a truth-table program solves the toy task more efficiently.</p>
+<h4>Allocation, analysis and missingness</h4>
+<p>Randomize preparation assignment within batch after eligibility is determined without looking at outcome. Balance positions and operators where feasible. Keep analyst-facing arm codes concealed until the primary analysis is frozen. The preparation, not the trial, determines the biological sample count. Use a hierarchical model or preparation-level summaries with uncertainty appropriate to the design.</p>
+<p>Pilot counts above estimate feasibility and variance. An illustrative two-arm normal approximation with SD 0.08 and a target difference 0.10, two-sided alpha .05 and power .80 gives about 11 analyzable preparations per arm, or 14 enrolled allowing 20% attrition. This is not the final size for multiple arms, bounded outcomes, batch effects, noninferiority or dyads. Recalculate prospectively from the pilot and freeze the result before confirmation.</p>
+<p>Retain every enrolled preparation. Separate receiving failure, pretraining exclusion, technical invalidity and post-training biological attrition. Report both scheduled-opportunity availability and valid-trial performance; do not improve the score by removing failed service periods. Dropout associated with training is an outcome, not just missing data. Provide conservative sensitivity analyses and the reason for every exclusion.</p>
+<p>A retention ratio <code>(P_delay − P_reference)/(P_immediate − P_reference)</code> is secondary. It is undefined or unstable near a zero denominator, can exceed one or be negative, and needs interval uncertainty. Predefine the reference performance for the chosen metric. For class-balanced macro recall the chance baseline differs from the raw prevalence baseline. Absolute delayed scores and between-arm contrasts remain primary.</p>
+<p>Use one frozen primary contrast per campaign; identify secondary and exploratory analyses. Preserve raw timestamps, delivered profiles, channel map, calibration, artifact masks, preparation history and preprocessing versions. Confirmation data are never used to choose a region, threshold or astrocyte ensemble before testing that same hypothesis on them.</p>
+<h4>Stopping and promotion</h4>
+<p>Pause task stimulation for invalid support, stale required sensors, invalid command/profile, lost time synchronization, exceeded exposure, unanticipated biological deterioration or failed suppression. Continue qualified culture care. Resume only with documented restoration and requalification appropriate to the fault. Scientific futility, candidate-budget exhaustion and lack of retention are separate stop reasons.</p>
+<p>Promote only the measured capability: O1 does not imply O2; 24-hour retention does not imply seven-day persistence; assisted performance does not imply B-only learning; astrocytic prediction does not imply causal storage. T17 closes the selected claim within its declared preparation and task scope. It does not establish a perfect or unrestricted human-understanding system.</p>
+</div></details><details class="archive-accordion protocol-appendix"><summary>Appendix 2 · Engineering specification and permit-board assumptions</summary><div class="archive-body"><p>Contains the review-level interfaces IF-01–IF-08, cell-free safety circuit reference, watchdog assumptions, wiring and commissioning controls. Not a validated live-device release.</p><p class="smallprint">Source: 04_Engineering/Engineering_Specification.md · ChristEye Project Launch Package v1.0</p><h4>CE-ENG-001: system and circuitry specification</h4>
+<h4>Drawing set and release state</h4>
+<p>The six-sheet set covers system interconnection, one cartridge and its service path, the complete cell-free permit-board reference circuit, power/connectors/net assignments, child-mesh information routing, and commissioning. SVGs are editable vector drawings; the PDF is the review copy. <code>permit_board_netlist.json</code> is the authoritative point-to-point wiring list for the prototype. It is not a KiCad PCB, Gerber release or an electrical-rule-check certificate.</p>
+<p>The commercial HD-MEA supplies its own sensing and electrode-drive electronics. Their proprietary internal schematic is not recreated. The custom circuitry below only grants or denies a low-voltage logical permit. J1 is initially connected to a test load and logic analyzer. A separately confirmed vendor interface must enforce that permit on every source of stimulation before live operation. A trigger input is not assumed to be a global inhibit.</p>
+<h4>System connections</h4>
+<table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Interface</th>
+<th>Source → destination</th>
+<th>Physical route</th>
+<th>Contract</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>IF-01</td>
+<td>C/O/S/B headstage ↔︎ acquisition hub</td>
+<td>Vendor cable</td>
+<td>Raw data, selected channels, actual stimulation and errors</td>
+</tr>
+<tr class="even">
+<td>IF-02</td>
+<td>Hub ↔︎ host H</td>
+<td>Vendor-supported data link</td>
+<td>Ordered events, acquisition clock and measured latency</td>
+</tr>
+<tr class="odd">
+<td>IF-03</td>
+<td>E → training scorer</td>
+<td>Protected process interface</td>
+<td>Training targets only after response closure; confirmation targets isolated</td>
+</tr>
+<tr class="even">
+<td>IF-04</td>
+<td>H ↔︎ L</td>
+<td>Dedicated USB serial link</td>
+<td>Fresh sequence-numbered status, profile authorization and acknowledgements</td>
+</tr>
+<tr class="odd">
+<td>IF-05</td>
+<td>Permit board J1 → adapter/test load</td>
+<td>Short 3.3 V logic lead</td>
+<td>Prototype high=permit; low/open/unpowered must suppress at the receiving interface</td>
+</tr>
+<tr class="even">
+<td>IF-06</td>
+<td>Camera/sensor timestamps → H</td>
+<td>Supported digital capture</td>
+<td>Clock identity, exposure time and uncertainty</td>
+</tr>
+<tr class="odd">
+<td>IF-07</td>
+<td>Sensor service → L/H</td>
+<td>Calibrated instrument interface</td>
+<td>Value, units, location, age and validity</td>
+</tr>
+<tr class="even">
+<td>IF-08</td>
+<td>Each service reservoir ↔︎ its cartridge/waste</td>
+<td>Independent identified fluid path</td>
+<td>No shared liquid in initial A/B or C/O experiments</td>
+</tr>
+</tbody>
+</table>
+<p>Reference MEA selection is MaxOne-class or a demonstrably equivalent system. Current manufacturer documentation provides raw-data/API access and external synchronization integration; its MaxLab interface separates Python setup/recording from C++ closed-loop streaming. This does not confirm a global hardware inhibit or guarantee the latency required by a future task. Obtain those answers in writing. [EXT-01, EXT-02]</p>
+<h4>Permit-board reference circuit</h4>
+<p>Use a Raspberry Pi Pico H as the independent microcontroller, powered through its normal USB connector. Its 3V3 output powers the local logic; do not feed an external supply into that output. Use a common local digital ground. The Pico is separate from H and boots with MCU_READY and MCU_PERMIT low. All vendor equipment retains its own approved power supply.</p>
+<p>U2 is TPL5010DDCR. Pin 1 is 3V3, pin 2 ground, pin 3 goes through R1=1.00 kΩ 1% to ground, pin 4 receives DONE, pin 5 supplies WAKE and pin 6 is open-drain RESET_N. The 1 kΩ selection corresponds to a nominal 200 ms watchdog interval; measure actual behavior. Pull RESET_N up with R2=100 kΩ, connect it to Pico RUN and the first gate. A valid DONE edge follows a successful complete control cycle, not an unconditional timer interrupt. The data sheet requires margin before the next WAKE; target a response within 50 ms in the bench firmware. [EXT-04]</p>
+<p>U3 and U7 are SN74LVC1G08DBVR AND gates. U3 combines LOOP_OK with RESET_N. U7 combines U3’s output with MCU_READY. U7’s output is CLEAR_N for U5. U4, another 1G08, combines U5.Q with MCU_PERMIT to create PERMIT_RAW. For this DBV package, pins 1/2 are inputs, 3 ground, 4 output and 5 supply. [EXT-05]</p>
+<p>U5 is SN74HC74N. Use its first flip-flop: /CLR1=pin 1, D1=2 tied high, CLK1=3 from ARM_CLK, /PRE1=4 tied high, Q1=5, /Q1=6 unconnected, ground=7 and VCC=14. Hold the unused half inactive with /CLR2 pin 13 low, D2 pin 12 low, CLK2 pin 11 low and /PRE2 pin 10 high; pins 8/9 are unconnected. CLEAR_N low resets the latch asynchronously. A new rising ARM edge is required after any clear. [EXT-09]</p>
+<p>U6 is SN74LVC1G17DBVR: pin 2 input ARM_FILTER, pin 4 ARM_CLK, pin 3 ground, pin 5 3V3, pin 1 unconnected. S_ARM is a normally open button connecting 3V3 through R3=1 kΩ to ARM_FILTER; R4=100 kΩ and C7=100 nF connect ARM_FILTER to ground. This RC/Schmitt arrangement is an initial button-conditioning design, not a certified debounce interval; test bounce, held-button recovery and power cycling. [EXT-10]</p>
+<p>S_STOP and S_COVER are normally closed contacts in series from 3V3 to LOOP_OK; R5=10 kΩ pulls LOOP_OK down. Opening either contact, breaking that lead or losing RESET_N drives CLEAR_N low. MCU_READY has R6=10 kΩ to ground; MCU_PERMIT has R7=10 kΩ to ground. R8=100 Ω connects PERMIT_RAW to J1.1, and R9=10 kΩ pulls J1.1 down. J1.2 is ground. Place C1–C6=100 nF at U2–U7 supplies and C8=10 µF at local power entry.</p>
+<p>Pico assignments: GP0/pin 1 MCU_PERMIT; GP1/pin 2 DONE; GP2/pin 4 WAKE; GP3/pin 5 LATCH_Q sense; GP4/pin 6 LOOP_OK sense; GP5/pin 7 MCU_READY; GP6/pin 9 J1 permit sense; pin 30 RUN; pin 36 3V3; pin 38 ground. Other GPIOs are unused in this revision. Verify physical pin numbering against the exact board before assembly. [EXT-03]</p>
+<p>Boolean behavior: <code>clear_n = loop_ok AND reset_n AND mcu_ready</code>; the latch becomes zero whenever clear_n is zero, becomes one only on a new ARM rising edge with clear_n high, and otherwise retains state. <code>permit = latch_q AND mcu_permit</code>. Firmware holds ready low while booting, paused or faulted, so a repaired host connection does not automatically rearm. A button held down through a fault cannot create a new rising edge after recovery.</p>
+<p>The design detects several ordinary failures but is not a certified single-fault-tolerant safety controller. A short to 3V3, welded contact, stuck gate, common supply fault or incorrect receiving adapter can defeat it. Live deployment requires a reviewed suppression architecture, including the vendor’s bounded stimulation and independent fault behavior. A faster required fault-response time may require a different watchdog or receiving inhibit. The 200 ms supervisor is not a biological exposure limit.</p>
+<h4>Controller protocol and firmware requirements</h4>
+<p>Proposed cell-free defaults: host status every 50 ms, stale timeout 150 ms, sequence numbers strictly increasing, unique session nonce, configuration digest match, one pending test command and manual rearm after any fault. These are software prototype values only. The MCU accepts a signed-off profile identifier and bounded event permission, not arbitrary raw voltage requests. Live profile limits remain null until released.</p>
+<p>A complete control cycle checks timebase, sensor validity, configuration, host heartbeat, interlock loop, allowed command and cumulative exposure. Only then may it pulse DONE. Status sampling is not enough if the output worker is hung. The internal MCU watchdog and external supervisor are complementary; the hardware latch provides manual rearm. Record the last fault and the actual J1 state before reset where technically possible.</p>
+<p>Do not rely on a blanket stop-pump command. The biological service controller has its own qualified response to each fault. Stimulation permit loss must preserve ordinary culture care. Do not use the permit board to switch a reservoir heater or life-support supply.</p>
+<h4>Mechanical and fluid schematic</h4>
+<p>Use the vendor’s chip, ring, lid and headstage unmodified for the first build. The carrier locates a datum outside the active surface, provides strain relief and leaves optical access above the well. Return to the same registered electrode map after service. Exact chassis dimensions, objective clearance, seal geometry and connector offsets come from selected parts and a measured tolerance stack; sheet 02 is a functional section, not a machining drawing.</p>
+<p>Keep C, O, S and B fluid identities separate. The first release can use supported manual exchange with complete records. Optional perfusion requires a separate validated supply, bubble handling, delivery measurement, sample access, waste route and containment. Pump flow is not inferred from its commanded speed. Thermal and gas recovery are measured at the relevant location. Do not place an arbitrary valve or absorber in a signaling study and assume it is chemically neutral.</p>
+<p>Local sensors initially come from calibrated laboratory instruments, not an uncharacterized custom pH electrode amplifier. Record their electrical outputs before designing any adapter. A neural observer can supplement these measurements but cannot certify its own culture temperature or missing sensor data.</p>
+<h4>Acquisition and storage</h4>
+<p>At 1,020 channels × 20 ksample/s × an assumed 2 bytes/sample, one raw electrical stream is 40.8 MB/s, 146.88 GB/hour or 3.52512 TB/day in decimal units. Three streams require 122.4 MB/s before metadata and optics. Confirm the actual stored sample format and channel availability. Optical storage is width×height×bytes/pixel×frame rate×recorded duration, plus metadata and compression policy.</p>
+<p>Benchmark sustained writing, burst load, file rotation, disk full and restart with synthetic data. A quoted SSD transfer speed is not an end-to-end result. Preserve raw evidence sufficient for the stated claim and document discarded data. Use common captured timing events where supported and measure offset, jitter and drift; browser display time is not the acquisition clock.</p>
+<h4>Commissioning acceptance</h4>
+<p>Bench inspection checks component identity, polarity, continuity, shorts, every pin assignment and unconnected outputs. Verify supply and current before connecting the Pico. Then use a logic analyzer to test boot, manual arm, STOP, COVER, READY loss, missing DONE, stuck-high DONE, host loss, held ARM, cable removal, restart and receiving load disconnection. Record worst observed response, not just the nominal value.</p>
+<p>The package’s software tests validate state logic and netlist completeness only. They do not execute the board, establish EMI performance, verify analog levels or qualify suppression at the MEA. Live release requires the same tests at the final receiving interface, with evidence that no queued, autonomous, alternate-client or replayed stimulation bypasses permission.</p>
+<p>The first electrical build can therefore begin after peer review of this reference circuit. Final instrument integration depends on IF-05 being resolved. If the selected platform cannot provide the required independent suppression, change the interface or platform rather than labeling a software stop as hardware protection.</p>
+</div></details><details class="archive-accordion protocol-appendix"><summary>Appendix 3 · Biological materials and assay qualification</summary><div class="archive-body"><p>Contains source and lineage qualification, material records, Soil receiving ranges, assay tiers, source conservation and release records. Qualified laboratory-specific recipes are intentionally not invented.</p><p class="smallprint">Source: 03_Biology/Material_and_Assay_Plan.md · ChristEye Project Launch Package v1.0</p><h4>Biological materials, Soil and analytical support</h4>
+<h4>Material strategy</h4>
+<p>Use qualified human iPSC-derived cells for the requested human substrate. Keep the regional identity explicit. A spinal motor-neuron/astrocyte reference has a direct maturation precedent, but does not demonstrate general learning. A richer spinal excitatory/inhibitory network is a separately qualified candidate. A cortical reference is an optional comparative preparation, not silently renamed as spinal. Brainstem tissue, spinal cord and dendritic spines are different meanings that can coexist in the theory.</p>
+<p>Functional Marrow denotes source and developmental constraints. Literal marrow is not a ready neural population. If marrow-donor origin is important, record it as a source requirement and commission a documented reprogramming and neural-differentiation route. Do not add raw marrow cells to the learner or relabel marrow macrophages as resident microglia.</p>
+<p>The initial purchase candidates are human spinal motor neurons and spinal astrocytes, for example BrainXell BX-0100 and BX-0650, subject to supplier confirmation for the chosen MEA. The product pages describe these cell categories and supplied supplements; they do not establish compatibility with this custom task or chip. [EXT-06, EXT-07]</p>
+<table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Material record</th>
+<th>Use</th>
+<th>Release evidence</th>
+<th>Initial disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BIO-C-REF</td>
+<td>Motor-neuron plus regional astrocyte interface reference</td>
+<td>Source lot, neuronal and regional identity, usable electrical interface</td>
+<td>First receiving/maturation pilot</td>
+</tr>
+<tr class="even">
+<td>BIO-C-DIV</td>
+<td>Defined spinal excitatory/inhibitory community plus astrocytes</td>
+<td>Intended subtype identities, functional inhibition, repeatable task responses</td>
+<td>Candidate after the reference interface works</td>
+</tr>
+<tr class="odd">
+<td>BIO-O</td>
+<td>Separately raised observer</td>
+<td>Same initial preparation as C; independent training and qualification</td>
+<td>Separate cartridge, separate history</td>
+</tr>
+<tr class="even">
+<td>BIO-S</td>
+<td>Support-policy community</td>
+<td>Same initial preparation where possible; candidate action discrimination</td>
+<td>Later separate cartridge</td>
+</tr>
+<tr class="odd">
+<td>BIO-B</td>
+<td>Teaching recipient</td>
+<td>Independent preparation with frozen initial characterization</td>
+<td>Dedicated teaching comparison</td>
+</tr>
+<tr class="even">
+<td>BIO-G</td>
+<td>Local astrocytes in each cartridge</td>
+<td>Identity, support-related function and observation compatibility</td>
+<td>Required locally; an electronic support module cannot replace them</td>
+</tr>
+<tr class="odd">
+<td>BIO-P</td>
+<td>Bank and progenitor source</td>
+<td>Identity, stability, developmental history and expansion controls</td>
+<td>Separate production service</td>
+</tr>
+<tr class="even">
+<td>BIO-X</td>
+<td>OPCs, microglia-like or peripheral support cells</td>
+<td>Distinct lineage and functional question</td>
+<td>Deferred one addition at a time</td>
+</tr>
+</tbody>
+</table>
+<p>Do not establish separate lineages called accuracy cells, anxiety cells or anger cells. A module’s trained role is an outcome of exposure and validation. Its lineage and training history are separate records.</p>
+<h4>Receiving and production contract</h4>
+<p>Require source identity, consent/use permissions, lot and passage history where applicable, viability method, post-thaw yield, regional specification, expected subtype composition, contamination release, residual undifferentiated-cell assessment, shipping conditions and a complete method revision. A quoted cell number is not a live attached cell count. Record received, viable delivered, attached and later surviving populations separately.</p>
+<p>Identity panels should be selected by the culture lead rather than inferred from a single marker. Candidate motor-neuron evidence includes MNX1/HB9, ISL1/2 and stage-appropriate CHAT; V2a candidates include VSX2/CHX10 with neuronal and regional evidence. GABAergic/glycinergic candidates need transmitter machinery and a measured inhibitory effect at their maturity. Astrocyte panels can include ALDH1L1, SOX9, S100B and appropriate GFAP with regional and functional evidence. HOXB4 alone is insufficient to establish the intended regional subtype.</p>
+<p>Source expansion, differentiation, co-culture maturation and task training remain distinct operations. Qualified developmental methods may use dual-SMAD, retinoic-acid or SHH-pathway stages, but a list of those reagents is not a combined method. A production partner supplies its actual controlled recipe. The package does not invent concentrations, incubation durations or substitutions for an unselected cell/MEA pair.</p>
+<h4>Soil qualification and material accounting</h4>
+<p>The selected cell supplier and platform must agree on one complete medium and one adhesion/matrix configuration. Candidate matrix families include PDL/PLO with laminin and separately evaluated alternatives. Candidate basal media include BrainPhys-class formulations, but the base, supplements and stage-specific factors are one versioned composition. Do not stack N2, SM1, B27-type or proprietary kits without reconciling their contents.</p>
+<p>For each formulation, record component identity, supplier, lot, stock and final units, preparation owner, stability, storage, assay interference and the culture stage. BDNF/GDNF, ascorbate and cAMP-related support are preparation-dependent; their presence does not encode a memory. Developmental morphogens are not routine maintenance additions unless the selected method calls for them.</p>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Soil component</th>
+<th>Measurement</th>
+<th>Reason to keep it separate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adhesion/ECM</td>
+<td>Attachment, spatial distribution, signal coupling, coating blank</td>
+<td>More coverage can change electrode access</td>
+</tr>
+<tr class="even">
+<td>Ions and buffer</td>
+<td>Qualified composition, local pH/osmolality</td>
+<td>Excitability change can masquerade as learning</td>
+</tr>
+<tr class="odd">
+<td>Energy substrates</td>
+<td>Glucose/lactate or other validated assays with volume and time</td>
+<td>Concentration is not metabolic flux or memory content</td>
+</tr>
+<tr class="even">
+<td>Gas/thermal environment</td>
+<td>Calibrated observation near the culture</td>
+<td>Incubator display is not necessarily cell-boundary state</td>
+</tr>
+<tr class="odd">
+<td>Trophic support</td>
+<td>Method version, stage, receptor/functional context when investigated</td>
+<td>Effects can be broad rather than task-selective</td>
+</tr>
+<tr class="even">
+<td>Service and exchange</td>
+<td>Delivered/removed volume, time, mixing and recovery</td>
+<td>Service is an exposure and possible hidden task cue</td>
+</tr>
+<tr class="odd">
+<td>Local astrocyte community</td>
+<td>Coverage, morphology, functional support measures</td>
+<td>Remote electronic advice does not supply local cellular machinery</td>
+</tr>
+</tbody>
+</table>
+<p>The mass-balance estimate over an interval is net uptake = input amount − output amount − change in compartment amount, with abiotic loss and sampling corrections. State units and uncertainty. Use blank medium/material controls for adsorption, evaporation and degradation. Normalize to an explicitly measured cell or protein denominator only if that denominator is appropriate and available.</p>
+<h4>Raising and releasing each community</h4>
+<p>G1 releases the source. G2 demonstrates developed structure and viable intended composition. G3 demonstrates usable input/output timing and stable observation. Perform these gates independently for C, O, S and B; matching source banks do not imply matching circuits. The observation window and tolerances are set after a qualification pilot, then frozen before learning comparisons.</p>
+<p>Measure attachment, neurite distribution, loss, clustering, synaptic organization and intended population survival. Use matched sacrificial preparations for destructive assays. A culture need not be perfectly stationary; maturation drift must be characterized well enough to distinguish it from the learning effect. Reject an interface with unusable artifacts or inseparable cue families even if its spontaneous firing rate looks high.</p>
+<p>Cell counts use the plated area, not just the active electrode area. State whether density refers to total well area, patterned island or active sensing region. The current MaxOne reference active region and electrode design must be checked for the purchased chip generation. Scaling another paper’s cells per plate by a guessed area is not a release method.</p>
+<h4>Assay tiers and sample preservation</h4>
+<p>Tier 1 runs with every task: raw electrical data, actual stimulus delivery, validity masks, local support observations, source/medium identity and behavior. Tier 2 adds registered imaging: cell location, morphology and selected calcium/reporter measurements. Tier 3 investigates a specific mechanism using a qualified laboratory assay and targeted comparisons.</p>
+<p>Astrocytic calcium is an observation of intracellular dynamics, not a direct readout of remembered content. Activity labeling, NFIA-related recruitment, IGFBP2-related stabilization and Ank2-related persistence are distinct candidate mechanisms from distinct studies. Preserve the distinction between IGFBP2 and IGF2BP2. No manipulation of either is specified as a universal recall command.</p>
+<p>Collect conditioned-medium samples only under an approved sampling plan with parent identity, volume, time, replacement and disturbance logged. The first experiment does not cross-feed recipients or claim that a sample contains extracted Understanding. Electrical, optical, molecular and behavioral records answer different questions; none automatically substitutes for the others.</p>
+<h4>Capacity and purchasing worksheet</h4>
+<p>For each population, required viable cells = released target per preparation × planned preparations / measured handling yield, plus explicitly justified qualification and assay reserves. Because target and yield are not yet known, <code>materials_plan.json</code> keeps them null and blocks a final order. Assay-only preparations, failed receiving lots, untrained controls and attrition must be included. A vial is not one biological replicate, and multiple fields of view are not independent preparations.</p>
+<p>Choose operational coverage so routine support is available during weekends and equipment failures. Life support is independent of accuracy, affect-inspired priority or research budget allocation. Retirement follows the culture lead’s predeclared criteria and preserves failure data.</p>
+</div></details><details class="archive-accordion protocol-appendix"><summary>Appendix 4 · Full curriculum and knowledge spaces</summary><div class="archive-body"><p>Levels K0–K9, knowledge relation records, child expertise and counterexample strategy.</p><p class="smallprint">Source: 02_Trials/Curriculum_and_Knowledge_Spaces.md · ChristEye Project Launch Package v1.0</p><h4>Curriculum and Knowledge-space expansion</h4>
+<p>The first core is intended to build human-defined relational capability in human-derived cells. Its task record can grow into a set of retained relations, while each child develops its own learned scope. This curriculum specifies what progress would mean without claiming that a dish has acquired ordinary human language, a person’s autobiographical memory or general human understanding.</p>
+<table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>Training content</th>
+<th>Required counterexample</th>
+<th>Promotion evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>K0 Interface</td>
+<td>Distinguishable cue families and response classes</td>
+<td>Sham, invalid and indistinguishable inputs</td>
+<td>G3; usable fixed input/output map</td>
+</tr>
+<tr class="even">
+<td>K1 Sequence</td>
+<td>AB versus BA, repeated symbols</td>
+<td>Same counts with different order</td>
+<td>Held-out sequence discrimination</td>
+</tr>
+<tr class="odd">
+<td>K2 Context</td>
+<td>C0/C1 changes the sequence-response relation</td>
+<td>Context-blind and final-symbol baselines</td>
+<td>Retained reversal with fixed decoder</td>
+</tr>
+<tr class="even">
+<td>K3 Delayed relation</td>
+<td>Cue a learned relation after quiet intervals</td>
+<td>Untrained relation and probe-history control</td>
+<td>Scoped retention at declared delays</td>
+</tr>
+<tr class="odd">
+<td>K4 Conditional composition</td>
+<td>Two previously learned relations select a response</td>
+<td>Familiar cues with an invalid combination</td>
+<td>New combinations; old skills remain</td>
+</tr>
+<tr class="even">
+<td>K5 Uncertainty</td>
+<td>Unknown context, missing evidence and ambiguous input</td>
+<td>Quiet-but-valid and slow-but-correct episodes</td>
+<td>Calibrated abstention without trivial silence</td>
+</tr>
+<tr class="odd">
+<td>K6 Observer exchange</td>
+<td>Child report changes a permitted core decision</td>
+<td>Replayed, shuffled and stale reports</td>
+<td>Benefit of relevant fresh information</td>
+</tr>
+<tr class="even">
+<td>K7 Independent expertise</td>
+<td>Different children learn different relation families</td>
+<td>Identical-source children with different histories</td>
+<td>Independent child skill and useful arbitration</td>
+</tr>
+<tr class="odd">
+<td>K8 Transfer</td>
+<td>New cue arrangement or context within the released interface</td>
+<td>Superficial similarity without the learned relation</td>
+<td>Prespecified generalization beyond shortcuts</td>
+</tr>
+<tr class="even">
+<td>K9 Continual expansion</td>
+<td>New relation or admitted child</td>
+<td>Retraining and unchanged-system controls</td>
+<td>New contribution with old-task noninferiority</td>
+</tr>
+</tbody>
+</table>
+<p>K4 onward are candidate curricula. The availability of software truth tables does not establish that the preparation can learn them. At every level, define the observation, target, meaning assigned by the human designer, counterexamples, readout and acceptance criterion before training.</p>
+<h4>A relation record</h4>
+<p>A Knowledge relation record contains a stable relation ID, source examples, context family, cue/output codebook, teaching history, candidate neuronal ensemble observations, associated astrocyte observations, delayed outcomes, counterexamples and the current claim level. It links to the relevant structure/function/intervention/task graph without collapsing them into one edge. The label is an index to evidence, not an address that directly reads a biological fact.</p>
+<p>An engram candidate is nominated on discovery data, then tested selectively on new data and delayed cues. Associated astrocytic participation is registered independently. Both can contribute to the same acquired relation. An axonal projection is a physical communication route, not sufficient evidence that it carries the full content of the relation.</p>
+<h4>Independent child ownership</h4>
+<p>Each child’s training data, readout, chronology, source lot, calibration, retained relation set and resource needs are separate. A parent can request a typed answer or review, but cannot overwrite the child’s history by changing a software label. A child can decline an unknown request. Parents and children both undergo isolated reevaluation after joining.</p>
+<p>Weights are contextual and revisable. A child reliable in monitoring a route can be unreliable in predicting retention. Its growth stage limits which tasks it may attempt. Anxiety-inspired vigilance can request more observations; anger-inspired protective priority can flag repeated independently verified conflicts. Neither supplies missing biological evidence or grants authority over life support.</p>
+<h4>Training records and progress</h4>
+<p>Record a mastery vector for each relation: acquisition, 45-minute/24-hour/seven-day outcomes where tested, context generalization, interference, calibration, response latency and availability. A relation remains unconfirmed if it was only tested during active teaching. Mark failed and unknown relations explicitly; do not remove them from the history to make the Tree appear complete.</p>
+<p>Expansion occurs when a missing relation remains after route, support and curriculum checks and a proposed addition has a testable benefit. Prefer an independently raised module with a reversible electronic route. Only later investigate whether a physical bridge or a new cell lineage improves the same declared outcome.</p>
+</div></details><details class="archive-accordion protocol-appendix"><summary>Appendix 5 · Project launch, ownership and first 90 days</summary><div class="archive-body"><p>Program responsibilities, independent laboratory and software workstreams, budgeting assumptions, deliverables and decision sequence.</p><p class="smallprint">Source: 01_Project/Launch_Plan.md · ChristEye Project Launch Package v1.0</p><h4>Company launch and execution plan</h4>
+<h4>The first product of the project</h4>
+<p>Build a research instrument that can demonstrate retained, context-sensitive learning in one human-derived neuronal–astrocytic culture, then show whether a separately trained observer improves its operation. A third support-policy learner, independent teaching recipient and physical axon bridge follow only when their predecessors work. General human understanding is a long-range aspiration, not the first acceptance endpoint.</p>
+<p>The core C owns its task history. Observer O learns to distinguish measured states and optionally predict an upcoming unreliable response. Support learner S proposes a permitted response. Recipient B tests independent acquisition after teaching. Production P supplies characterized lots; it is separate from the active mesh. Each cartridge contains its own local astrocytic support G. The host H handles timing, encoding, logging and the electronic bridge; evaluator E holds protected targets; limit controller L controls permission independently of learned policy.</p>
+<p>There are three different milestones: a working instrument, acquired and retained capability, and useful multi-module contribution. Fund and review them separately. A useful research finding does not require a computing advantage, while a product claim about efficiency does require a matched whole-device comparison.</p>
+<h4>Starting organization</h4>
+<p>The initial working model is a company-led program with a qualified laboratory partner. This avoids making a custom cell-production facility a prerequisite for the first experiment. The company owns the task specification, integration, records and software; the laboratory owns the controlled biological methods and culture release. The contracts must settle data ownership, raw-data access, publication rights, background intellectual property, assay failure reporting, shipping responsibility and usable-lot replacement before ordering.</p>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Responsibility</th>
+<th>Initial staffing assumption</th>
+<th>Concrete output</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Program and product lead</td>
+<td>Founder plus fractional project support</td>
+<td>Scope, stage budget, decisions and version control</td>
+</tr>
+<tr class="even">
+<td>Neural culture lead</td>
+<td>1.0 FTE or named partner lead</td>
+<td>Regional lot selection, controlled methods, viability and maturity release</td>
+</tr>
+<tr class="odd">
+<td>Electrophysiology and integration</td>
+<td>1.0 FTE</td>
+<td>MEA qualification, codebook, delivered-output evidence</td>
+</tr>
+<tr class="even">
+<td>Software and embedded systems</td>
+<td>1.0 FTE</td>
+<td>Host, isolated evaluator, bridge, records, permit-board firmware</td>
+</tr>
+<tr class="odd">
+<td>Statistics and assay analysis</td>
+<td>0.5 FTE</td>
+<td>Estimands, allocation, power update, blinded analysis</td>
+</tr>
+<tr class="even">
+<td>Lab operations and quality</td>
+<td>0.5 FTE</td>
+<td>Inventory, calibration, records and maintenance coverage</td>
+</tr>
+<tr class="odd">
+<td>External specialists</td>
+<td>Scoped contracts</td>
+<td>Electrical design review, microscopy, stem-cell oversight and counsel</td>
+</tr>
+</tbody>
+</table>
+<p>These are responsibility allocations, not hiring requirements for seven different people. A lead may cover several roles, but the person who optimizes the candidate should not be the only person adjudicating its sealed confirmation result. The founder does not need to become the cell-culture operator to start the company.</p>
+<h4>Facility and service requirements</h4>
+<p>Use a site already capable of human-cell research, aseptic culture handling, qualified environmental support, appropriate source storage, waste handling, contamination testing and incident response. Secure microscopy and MEA access during both maturation and evaluation. Reserve independent support and observation for simultaneous modules; a single headstage used sequentially cannot establish real-time coupling between two cartridges.</p>
+<p>The engineering bench needs an oscilloscope or logic analyzer, a current-limited low-voltage supply, a multimeter, digital test loads and labeled harnesses. Keep wet culture, dry electronics and service materials partitioned. Use supplier power supplies and approved mains distribution. The reference permit circuit is low voltage; it does not switch building power or drive culture electrodes.</p>
+<p>Separate task-control machines from general internet browsing. Preserve full configuration hashes, access roles and a second copy of critical records. Facility continuity planning must distinguish losing task processing from losing life support. A host reboot should not interrupt the culture’s independently qualified support.</p>
+<p>The laboratory determines the oversight route for the selected cells and assays, including provenance and consent permissions. ISSCR guidance supports documented quality, provenance and reproducibility; it is guidance, not a substitute for the applicable local review. This program contains no clinical administration, transplantation or whole-embryo production. A later change in scope requires a new project decision. [EXT-08]</p>
+<h4>Planning budget</h4>
+<p>The figures in <code>startup_budget.json</code> are company planning allowances in USD, not supplier quotes, salaries surveyed today or commitments to spend. The base scenario assumes six months, four FTE equivalents across the roles above, access through a partner facility and procurement or contracted access to the first instrument configuration. Taxes, international shipping and facility construction are excluded unless added to a quote.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Cost group</th>
+<th style="text-align: right;">Base allowance</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>People, loaded six-month allowance</td>
+<td style="text-align: right;">$360,000</td>
+</tr>
+<tr class="even">
+<td>Lab space and partner services</td>
+<td style="text-align: right;">$90,000</td>
+</tr>
+<tr class="odd">
+<td>MEA and optical hardware/access</td>
+<td style="text-align: right;">$180,000</td>
+</tr>
+<tr class="even">
+<td>Cells, chips and analytical services</td>
+<td style="text-align: right;">$100,000</td>
+</tr>
+<tr class="odd">
+<td>Host, storage, engineering and calibration</td>
+<td style="text-align: right;">$30,000</td>
+</tr>
+<tr class="even">
+<td>Contracts, quality and insurance</td>
+<td style="text-align: right;">$40,000</td>
+</tr>
+<tr class="odd">
+<td>Subtotal</td>
+<td style="text-align: right;">$800,000</td>
+</tr>
+<tr class="even">
+<td>Contingency at 25%</td>
+<td style="text-align: right;">$200,000</td>
+</tr>
+<tr class="odd">
+<td>Planning total</td>
+<td style="text-align: right;">$1,000,000</td>
+</tr>
+</tbody>
+</table>
+<p>The illustrative low/base/high totals are $550,000/$1,000,000/$1,625,000, obtained from the explicit assumptions in the JSON. They are runway scenarios, not forecasts of success. Reduce capital through contracted access before reducing independent replication or raw-data retention. Obtain itemized quotes and a phase-specific purchase order before authorizing the next stage.</p>
+<h4>Day-one work orders</h4>
+<ol type="1">
+<li>Appoint the culture, electrical and analysis owners; approve the narrow C0/C1 task and the human-cell sourcing requirement.</li>
+<li>Open the controlled record set. Preserve v0.4 and this package as immutable baselines. Assign one owner to every launch blocker.</li>
+<li>Send the prepared vendor questionnaire through the company’s normal process after choosing recipients. No messages have been sent by this package.</li>
+<li>Request a joint MEA/cell-supplier compatibility discussion: specific chip generation, raw access, two-unit synchronization, optical access, medium and independent stimulation suppression.</li>
+<li>Start T00 with synthetic events and T01 with the permit-board test load. Do not connect the prototype to an instrument trigger or electrode input before its electrical interface is confirmed.</li>
+<li>Obtain the proposed source lot certificates, relevant permissions, exact supplied methods and a reference co-culture quote. Reserve cells only after the receiving and support path is identified.</li>
+<li>Lock the pilot question and exclusions. Set a maximum pilot spend and a decision date based on actual supplier lead times.</li>
+</ol>
+<h4>First 90 days as a planning sequence</h4>
+<table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Window</th>
+<th>Work and decision</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Days 1–10</td>
+<td>Staff owners, obtain RFIs, inspect data contracts, run software harness and design review</td>
+</tr>
+<tr class="even">
+<td>Days 11–30</td>
+<td>Freeze bench interfaces, assemble and test the cell-free permit board, measure acquisition/storage timing, establish lab methods</td>
+</tr>
+<tr class="odd">
+<td>Days 31–60</td>
+<td>If receiving gates pass: obtain and characterize reference lots; qualify electrode/optics/medium compatibility. Otherwise continue bench work and resolve the blocker</td>
+</tr>
+<tr class="even">
+<td>Days 61–90</td>
+<td>If G1–G3 pass: run a limited acquisition/retention pilot and estimate preparation-level variation. Do not promise joining by a calendar date</td>
+</tr>
+<tr class="odd">
+<td>After the pilot</td>
+<td>Freeze a candidate and fund confirmation only if instrument validity and feasibility support it. Add O, then S/B in separate campaigns</td>
+</tr>
+</tbody>
+</table>
+<p>Human neuronal maturity and vendor lead times may extend these windows. Dates are scheduling assumptions; biological gates are binding. The program may require multiple maturation cycles. Do not allocate all funding to hardware before the pilot proves usable preparations can be obtained consistently.</p>
+<h4>Decision and change records</h4>
+<p>Every promotion names the data, protocol version, independent reviewer, unresolved limits and scope of the claim. A failed candidate remains in the record. A supplier substitution, new medium, new cell subtype, stimulation revision or changed readout creates a successor configuration and triggers the relevant requalification.</p>
+<p>Ready today: planning, contract drafting, vendor RFIs, offline software and a reviewed cell-free prototype. Not yet released: living stimulation, final chassis manufacture, proprietary MEA internal circuitry, biological affect mechanisms and a broad human-understanding claim. The release register gives a concrete closure test for each item rather than leaving a general warning.</p>
+</div></details></article><aside aria-label="Contents" class="toc"></aside></div></main><footer class="footer"><div class="wrap"><div class="footer-grid"><div><strong>ChristEye <span style="color:var(--aqua)">✧</span></strong><p>A research program exploring modular bioelectronic learning and the measurement of durable network capability.</p><p>Research proposal. No clinical use. No demonstrated ChristEye living-computer prototype.</p></div><div><span class="section-label">Explore</span><a href="index.html">Overview</a><a href="implementation.html">Implementation manual</a><a href="notebook.html">Research notebook</a><a href="equations.html">Complete equations</a><a href="six-stars.html">Six Stars</a><a href="research.html">References</a></div><div><span class="section-label">Publication</span><p>CE-DEV-001 / rev. 0.4<br/>Research edition · 13 November 2026</p><p>Prepared for We Develop Software LLC. Grounded in the supplied design files with references to external published work.</p></div></div><div class="footer-bottom"><span>© 2026 ChristEye research documentation. All claims carry their own evidence status.</span><span>Plain HTML · CSS · JS / offline math / local workspace / no external trackers</span></div></div></footer><script defer="" src="assets/main.js"></script><script defer="" src="assets/program.js"></script><script defer="" src="assets/workbench.js"></script></body></html>

@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1190" height="842" viewBox="0 0 1190 842">
+<rect width="100%" height="100%" fill="white"/>
+<text x="42" y="37.84" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#087e85">CE-ENG-001 / Sheet 04</text>
+<text x="42" y="71.5" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#17394b">Electrical schematic - manual latch, passives and connector</text>
+<text x="42" y="96.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#a85418">Detailed pin/net assignments; not a PCB layout or certified safety controller</text>
+<line x1="42" y1="112" x2="1148" y2="112" stroke="#17394b" stroke-width="1.5"/>
+<rect x="72" y="140" width="450" height="370" fill="#ffffff" stroke="#17394b"/>
+<text x="84" y="165.12" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#17394b">U5  SN74HC74N manual arm latch</text>
+<line x1="58" y1="192" x2="72" y2="192" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="195.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">1  /CLR1</text>
+<text x="297.0" y="195.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">CLEAR_N</text>
+<line x1="58" y1="215" x2="72" y2="215" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="218.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">2  D1</text>
+<text x="297.0" y="218.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">3V3</text>
+<line x1="58" y1="238" x2="72" y2="238" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="241.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">3  CLK1</text>
+<text x="297.0" y="241.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">ARM_CLK</text>
+<line x1="58" y1="261" x2="72" y2="261" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="264.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">4  /PRE1</text>
+<text x="297.0" y="264.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">3V3</text>
+<line x1="58" y1="284" x2="72" y2="284" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="287.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">5  Q1</text>
+<text x="297.0" y="287.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">LATCH_Q</text>
+<line x1="58" y1="307" x2="72" y2="307" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="310.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">6  /Q1</text>
+<text x="297.0" y="310.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">NC</text>
+<line x1="58" y1="330" x2="72" y2="330" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="333.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">7  GND</text>
+<text x="297.0" y="333.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">GND</text>
+<line x1="58" y1="353" x2="72" y2="353" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="356.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">8  /Q2</text>
+<text x="297.0" y="356.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">NC</text>
+<line x1="58" y1="376" x2="72" y2="376" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="379.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">9  Q2</text>
+<text x="297.0" y="379.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">NC</text>
+<line x1="58" y1="399" x2="72" y2="399" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="402.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">10  /PRE2</text>
+<text x="297.0" y="402.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">3V3</text>
+<line x1="58" y1="422" x2="72" y2="422" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="425.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">11  CLK2</text>
+<text x="297.0" y="425.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">GND</text>
+<line x1="58" y1="445" x2="72" y2="445" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="448.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">12  D2</text>
+<text x="297.0" y="448.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">GND</text>
+<line x1="58" y1="468" x2="72" y2="468" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="471.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">13  /CLR2</text>
+<text x="297.0" y="471.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">GND</text>
+<line x1="58" y1="491" x2="72" y2="491" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="494.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">14  VCC</text>
+<text x="297.0" y="494.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">3V3</text>
+<rect x="660" y="140" width="440" height="163" fill="#ffffff" stroke="#17394b"/>
+<text x="672" y="165.12" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#17394b">U6  SN74LVC1G17DBVR</text>
+<line x1="646" y1="192" x2="660" y2="192" stroke="#17394b" stroke-width="1.5"/>
+<text x="669" y="195.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">1  NC</text>
+<text x="880.0" y="195.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">NC</text>
+<line x1="646" y1="215" x2="660" y2="215" stroke="#17394b" stroke-width="1.5"/>
+<text x="669" y="218.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">2  A</text>
+<text x="880.0" y="218.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">ARM_FILTER</text>
+<line x1="646" y1="238" x2="660" y2="238" stroke="#17394b" stroke-width="1.5"/>
+<text x="669" y="241.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">3  GND</text>
+<text x="880.0" y="241.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">GND</text>
+<line x1="646" y1="261" x2="660" y2="261" stroke="#17394b" stroke-width="1.5"/>
+<text x="669" y="264.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">4  Y</text>
+<text x="880.0" y="264.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">ARM_CLK</text>
+<line x1="646" y1="284" x2="660" y2="284" stroke="#17394b" stroke-width="1.5"/>
+<text x="669" y="287.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">5  VCC</text>
+<text x="880.0" y="287.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">3V3</text>
+<text x="660" y="337.3" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#17394b">Contacts and test connector</text>
+<text x="660" y="385.02" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#17394b">3V3</text>
+<line x1="695" y1="382" x2="725" y2="382" stroke="#17394b" stroke-width="1.5"/>
+<line x1="725" y1="382" x2="740" y2="382" stroke="#17394b" stroke-width="1.5"/>
+<line x1="740" y1="382" x2="770" y2="382" stroke="#17394b" stroke-width="1.5"/>
+<line x1="770" y1="382" x2="785" y2="382" stroke="#17394b" stroke-width="1.5"/>
+<text x="722" y="366.02" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#17394b">S_STOP NC</text>
+<line x1="785" y1="382" x2="840" y2="382" stroke="#17394b" stroke-width="1.5"/>
+<line x1="840" y1="382" x2="855" y2="382" stroke="#17394b" stroke-width="1.5"/>
+<line x1="855" y1="382" x2="885" y2="382" stroke="#17394b" stroke-width="1.5"/>
+<line x1="885" y1="382" x2="900" y2="382" stroke="#17394b" stroke-width="1.5"/>
+<text x="837" y="366.02" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#17394b">S_COVER NC</text>
+<line x1="900" y1="382" x2="965" y2="382" stroke="#17394b" stroke-width="1.5"/>
+<text x="970" y="385.02" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#087e85">LOOP_OK</text>
+<text x="660" y="406.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">R5 pulls LOOP_OK low; either open contact clears U5.</text>
+<text x="660" y="447.02" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#17394b">3V3</text>
+<line x1="695" y1="444" x2="725" y2="444" stroke="#17394b" stroke-width="1.5"/>
+<line x1="725" y1="444" x2="740" y2="444" stroke="#17394b" stroke-width="1.5"/>
+<line x1="740" y1="444" x2="770" y2="431" stroke="#17394b" stroke-width="1.5"/>
+<line x1="770" y1="444" x2="785" y2="444" stroke="#17394b" stroke-width="1.5"/>
+<text x="722" y="428.02" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#17394b">S_ARM NO</text>
+<line x1="785" y1="444" x2="840" y2="444" stroke="#17394b" stroke-width="1.5"/>
+<rect x="840" y="436" width="45" height="16" fill="#ffffff" stroke="#17394b"/>
+<line x1="885" y1="444" x2="955" y2="444" stroke="#17394b" stroke-width="1.5"/>
+<text x="840" y="426.02" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#17394b">R3 1k</text>
+<text x="960" y="447.02" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#087e85">ARM_FILTER</text>
+<text x="660" y="469.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">R4 and C7: ARM_FILTER to GND. U6 supplies ARM_CLK.</text>
+<text x="660" y="513.02" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#087e85">PERMIT_RAW</text>
+<line x1="755" y1="510" x2="810" y2="510" stroke="#17394b" stroke-width="1.5"/>
+<rect x="810" y="502" width="45" height="16" fill="#ffffff" stroke="#17394b"/>
+<text x="810" y="492.02" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#17394b">R8 100R</text>
+<line x1="855" y1="510" x2="960" y2="510" stroke="#17394b" stroke-width="1.5"/>
+<text x="965" y="513.02" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#17394b">J1.1</text>
+<text x="660" y="537.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">J1.2 = GND. R9 pulls J1.1 low. Test load only.</text>
+<text x="72" y="552.3" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#17394b">All passive connections (IEC component values; see JSON netlist)</text>
+<rect x="72" y="575" width="1028" height="27" fill="#edf3f5" stroke="#d3dce0"/>
+<text x="84" y="591.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">R1 1.00k</text>
+<text x="245" y="591.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">WD_DELAY - GND</text>
+<text x="625" y="591.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">R2 100k</text>
+<text x="790" y="591.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">3V3 - RESET_N</text>
+<rect x="72" y="602" width="1028" height="27" fill="#ffffff" stroke="#d3dce0"/>
+<text x="84" y="618.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">R3 1.00k</text>
+<text x="245" y="618.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">ARM_SWITCH - ARM_FILTER</text>
+<text x="625" y="618.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">R4 100k</text>
+<text x="790" y="618.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">ARM_FILTER - GND</text>
+<rect x="72" y="629" width="1028" height="27" fill="#edf3f5" stroke="#d3dce0"/>
+<text x="84" y="645.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">R5 10k</text>
+<text x="245" y="645.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">LOOP_OK - GND</text>
+<text x="625" y="645.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">R6 10k</text>
+<text x="790" y="645.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">MCU_READY - GND</text>
+<rect x="72" y="656" width="1028" height="27" fill="#ffffff" stroke="#d3dce0"/>
+<text x="84" y="672.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">R7 10k</text>
+<text x="245" y="672.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">MCU_PERMIT - GND</text>
+<text x="625" y="672.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">R8 100 ohm</text>
+<text x="790" y="672.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">PERMIT_RAW - PERMIT_OUT</text>
+<rect x="72" y="683" width="1028" height="27" fill="#edf3f5" stroke="#d3dce0"/>
+<text x="84" y="699.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">R9 10k</text>
+<text x="245" y="699.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">PERMIT_OUT - GND</text>
+<text x="625" y="699.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">C7 100nF</text>
+<text x="790" y="699.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">ARM_FILTER - GND</text>
+<rect x="72" y="710" width="1028" height="27" fill="#ffffff" stroke="#d3dce0"/>
+<text x="84" y="726.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">C1-C6 100nF</text>
+<text x="245" y="726.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">3V3 - GND at U2-U7</text>
+<text x="625" y="726.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">C8 10uF</text>
+<text x="790" y="726.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">3V3 - GND power entry</text>
+<text x="72" y="760.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">All resistors 1%. Local capacitors rated at least 10 V. All NC pins remain unconnected. A fresh ARM rising edge is required after CLEAR_N returns high.</text>
+<line x1="42" y1="789" x2="1148" y2="789" stroke="#17394b" stroke-width="1.5"/>
+<text x="42" y="811.02" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#17394b">Revision A | 13 Nov 2026 | Reference design - see release register and engineering specification</text>
+<text x="1050" y="811.02" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#17394b">4 / 6</text>
+</svg>

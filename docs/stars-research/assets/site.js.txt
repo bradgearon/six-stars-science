@@ -1,0 +1,1 @@
+This site intentionally requires no external runtime libraries. See main.js and style.css.

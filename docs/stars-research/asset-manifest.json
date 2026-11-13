@@ -1,0 +1,142 @@
+{
+  "project": "ChristEye Research Workspace",
+  "version": "2.0",
+  "entry": "index.html",
+  "files": [
+    {
+      "path": "API_INTEGRATION.md",
+      "bytes": 1918,
+      "sha256": "d3778d3e95a6a605e2ed902a315259178828372f3c8ddd5efc05117e5e500c81"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2860,
+      "sha256": "cfa4a259952688d9f0b6f7f573bdadd2f40241cc8f22f180b13b58decbb3c428"
+    },
+    {
+      "path": "architecture.html",
+      "bytes": 19175,
+      "sha256": "00691445f5b3d5ece351609d8453dc7a28bfc4640ed8efdd2a6d41a408384639"
+    },
+    {
+      "path": "assets/cat-mark.svg",
+      "bytes": 542,
+      "sha256": "1f98f8c1f7893039c8ce6b497b0b0b944fb8344c9ab65f89c98aeacda6b70228"
+    },
+    {
+      "path": "assets/equation-search.js",
+      "bytes": 1030,
+      "sha256": "eb3a73939246e8629412331bd23e162bfc0c93d3dcbc640a1fa794b0c4365de8"
+    },
+    {
+      "path": "assets/main.js",
+      "bytes": 2371,
+      "sha256": "e6d7f8635bd63be93ddcb87f41779f7efab273a7930b9ad7439329c4c2a4d89e"
+    },
+    {
+      "path": "assets/program.js",
+      "bytes": 22860,
+      "sha256": "190eac188705cc108af30fb5e48e7c9a435c3d5fca613f7c4e4201f51c4af719"
+    },
+    {
+      "path": "assets/schematics/sheet-01.svg",
+      "bytes": 9323,
+      "sha256": "d376c002709db40b3e8da11444598d79406626c2448ab921914cff9a70a94dae"
+    },
+    {
+      "path": "assets/schematics/sheet-02.svg",
+      "bytes": 7006,
+      "sha256": "480333c04d71325162911be2b1192db8f5a6122592f5060a8d760208e965b8dd"
+    },
+    {
+      "path": "assets/schematics/sheet-03.svg",
+      "bytes": 13202,
+      "sha256": "08a0dcdc79d45b920dae6813c8b7c2e8e9c710491de6ff3690bc3897e0dee1c8"
+    },
+    {
+      "path": "assets/schematics/sheet-04.svg",
+      "bytes": 14856,
+      "sha256": "26b2c047edc8658464cbb8526e0470e94600cf092231d140fc82b3cbc5c49275"
+    },
+    {
+      "path": "assets/schematics/sheet-05.svg",
+      "bytes": 7006,
+      "sha256": "3928903665e51a74d591cfc080c48dcc710a98d11de22e1c9ffde1b690828c97"
+    },
+    {
+      "path": "assets/schematics/sheet-06.svg",
+      "bytes": 6744,
+      "sha256": "388e2e695f4daac7ffa984c0b1a698a0f1ba56b6cf58659ac1188e7831f5a0c6"
+    },
+    {
+      "path": "assets/service-adapter.js",
+      "bytes": 643,
+      "sha256": "84799ee4e3d0b4847306b54c543cb13c7f438167109fe49c12f1a1a0db2ed447"
+    },
+    {
+      "path": "assets/site.js.txt",
+      "bytes": 91,
+      "sha256": "85897f0417eaa08eb32e1b180e57ac4b5ea6ac22044501895a531782848a09fb"
+    },
+    {
+      "path": "assets/six-stars-scorecard.webp",
+      "bytes": 416756,
+      "sha256": "0701e269bb308ee91aa8fcfc1e75a5892f288b5bde20567cf1ef1ed48808da95"
+    },
+    {
+      "path": "assets/style.css",
+      "bytes": 28752,
+      "sha256": "a3cf5d9218326f0a435c2071ecad45c732b9927f9350399e2a88b6c19ad94396"
+    },
+    {
+      "path": "assets/workbench.js",
+      "bytes": 21524,
+      "sha256": "25e0dfbe1a80411e556902007a2bc77b74c6811351330cdb4d9896a05c57cf77"
+    },
+    {
+      "path": "equations.html",
+      "bytes": 224030,
+      "sha256": "e7a85ad0587dacc26278dd76c2a630a1fb82ec40cfe6e9f6a42536a3e2b3d6c1"
+    },
+    {
+      "path": "implementation.html",
+      "bytes": 81014,
+      "sha256": "0f5a8673434a7965992ebc617f3da55571944661dee78b21c917fc91a4f8f563"
+    },
+    {
+      "path": "index.html",
+      "bytes": 10491,
+      "sha256": "4004d94b4dff1a3b95dc2b4e00571bdde220583f0a632348618cc5d92d742bdf"
+    },
+    {
+      "path": "notebook.html",
+      "bytes": 14525,
+      "sha256": "2b56ac4d45dd7e3137319dffca446070095a5ae7f86e45cabbca46993098197b"
+    },
+    {
+      "path": "research.html",
+      "bytes": 25536,
+      "sha256": "14278b9afc14cfc05d879f211466bf15f8c77b613a14ca7586261919f4a7221e"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 23,
+      "sha256": "16ceb5ee3e0dc13aa9adf31a3ebbe45a1d965b8c2b9f72eaf84e5911e140ed95"
+    },
+    {
+      "path": "six-stars.html",
+      "bytes": 18908,
+      "sha256": "3f2fee8ed7b57a9bdc9ad35879cc9301ac337d92e0ee1edf1040c8de599a6340"
+    },
+    {
+      "path": "theory.html",
+      "bytes": 21758,
+      "sha256": "fcbe4765fb63e7667aebcfae298b1428f3a17fa058e20db70e25a0fa36a1691b"
+    },
+    {
+      "path": "training.html",
+      "bytes": 20588,
+      "sha256": "7bdc41dc984765ced96620329c07b0dc9eeb60d5e2e959969c7b4856679e76c7"
+    }
+  ]
+}
