@@ -1,0 +1,251 @@
+{
+  "status": "candidate_not_quoted",
+  "prototype_components": [
+    {
+      "ref": "U1",
+      "part": "Raspberry Pi Pico H",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "U2",
+      "part": "TPL5010DDCR",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "U3",
+      "part": "SN74LVC1G08DBVR",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "U4",
+      "part": "SN74LVC1G08DBVR",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "U7",
+      "part": "SN74LVC1G08DBVR",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "U5",
+      "part": "SN74HC74N",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "U6",
+      "part": "SN74LVC1G17DBVR",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "R1",
+      "part": "1.00k 1%",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "R2",
+      "part": "100k 1%",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "R3",
+      "part": "1.00k 1%",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "R4",
+      "part": "100k 1%",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "R5",
+      "part": "10k 1%",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "R6",
+      "part": "10k 1%",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "R7",
+      "part": "10k 1%",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "R8",
+      "part": "100 ohm 1%",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "R9",
+      "part": "10k 1%",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "C1",
+      "part": "100nF X7R >=10V",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "C2",
+      "part": "100nF X7R >=10V",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "C3",
+      "part": "100nF X7R >=10V",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "C4",
+      "part": "100nF X7R >=10V",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "C5",
+      "part": "100nF X7R >=10V",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "C6",
+      "part": "100nF X7R >=10V",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "C7",
+      "part": "100nF X7R >=10V",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "C8",
+      "part": "10uF >=10V",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "S_STOP",
+      "part": "NC maintained contact",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "S_COVER",
+      "part": "NC contact",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "S_ARM",
+      "part": "NO momentary button",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    },
+    {
+      "ref": "J1",
+      "part": "2-pin keyed prototype test connector",
+      "quantity": 1,
+      "unit_price": null,
+      "footprint_verified": false
+    }
+  ],
+  "system_items": [
+    {
+      "item": "MEA recording setup",
+      "initial_quantity": 1,
+      "release_need": "R1; expand to 2 simultaneous modules for R2",
+      "supplier_quote": null
+    },
+    {
+      "item": "Independent third module",
+      "initial_quantity": 0,
+      "release_need": "R3 only after joining benefit",
+      "supplier_quote": null
+    },
+    {
+      "item": "Supported chips/chambers",
+      "initial_quantity": null,
+      "release_need": "Preparation plan and vendor reuse policy",
+      "supplier_quote": null
+    },
+    {
+      "item": "Optical access",
+      "initial_quantity": 1,
+      "release_need": "Existing shared instrument or compatible purchase",
+      "supplier_quote": null
+    },
+    {
+      "item": "Host and measured storage",
+      "initial_quantity": 1,
+      "release_need": "Throughput benchmark",
+      "supplier_quote": null
+    },
+    {
+      "item": "Independent support per cartridge",
+      "initial_quantity": null,
+      "release_need": "Released receiving/support plan",
+      "supplier_quote": null
+    },
+    {
+      "item": "Calibration/assay access",
+      "initial_quantity": 1,
+      "release_need": "Lab partner service",
+      "supplier_quote": null
+    },
+    {
+      "item": "Carrier and test harness",
+      "initial_quantity": 1,
+      "release_need": "Review reference then freeze vendor geometry",
+      "supplier_quote": null
+    }
+  ]
+}

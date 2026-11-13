@@ -1,0 +1,459 @@
+[
+  {
+    "id": "T00",
+    "name": "Software contracts",
+    "prerequisites": "none",
+    "arms": [
+      "nominal",
+      "leakage attempt",
+      "stale/replayed events"
+    ],
+    "unit": "software episode",
+    "primary_outcome": "All required invariants pass",
+    "pilot_n_per_arm": null,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T01",
+    "name": "Permit-board commissioning",
+    "prerequisites": "T00",
+    "arms": [
+      "nominal",
+      "open contact",
+      "watchdog loss",
+      "host loss",
+      "held ARM"
+    ],
+    "unit": "bench assembly",
+    "primary_outcome": "Measured suppression and manual rearm",
+    "pilot_n_per_arm": null,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T02",
+    "name": "Culture/interface qualification",
+    "prerequisites": "T01 and P01-P20 as applicable",
+    "arms": [
+      "reference",
+      "cell-free blanks"
+    ],
+    "unit": "independent preparation",
+    "primary_outcome": "G1-G3 released",
+    "pilot_n_per_arm": null,
+    "pilot_n_total": 6,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T03",
+    "name": "Core acquisition",
+    "prerequisites": "T02",
+    "arms": [
+      "contingent",
+      "yoked exposure matched",
+      "no teaching"
+    ],
+    "unit": "independent preparation",
+    "primary_outcome": "Learning contrast with uncertainty",
+    "pilot_n_per_arm": 6,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T04",
+    "name": "Delayed retention",
+    "prerequisites": "T03",
+    "arms": [
+      "immediate",
+      "45 minutes",
+      "24 hours",
+      "7 days",
+      "probe-history control"
+    ],
+    "unit": "independent preparation",
+    "primary_outcome": "Absolute retained scores and arm contrasts",
+    "pilot_n_per_arm": null,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T05",
+    "name": "Spaced learning",
+    "prerequisites": "T03",
+    "arms": [
+      "spaced",
+      "massed equal exposure"
+    ],
+    "unit": "independent preparation",
+    "primary_outcome": "Delayed difference at equal information/exposure",
+    "pilot_n_per_arm": null,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T06",
+    "name": "Observer classification",
+    "prerequisites": "T02",
+    "arms": [
+      "trained O",
+      "untrained O",
+      "digital baseline"
+    ],
+    "unit": "independent preparation/source episode",
+    "primary_outcome": "Held-out O1 macro recall and false alerts",
+    "pilot_n_per_arm": 6,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T07",
+    "name": "Observer early warning",
+    "prerequisites": "T06",
+    "arms": [
+      "pre-response O",
+      "digital predictor",
+      "shuffled labels"
+    ],
+    "unit": "independent preparation/source episode",
+    "primary_outcome": "Lead time and precision/recall",
+    "pilot_n_per_arm": null,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T08",
+    "name": "Observer joining",
+    "prerequisites": "T04 and T06",
+    "arms": [
+      "C alone",
+      "trained O",
+      "untrained O",
+      "replayed O",
+      "digital O"
+    ],
+    "unit": "independent dyad",
+    "primary_outcome": "Added benefit with protected capability",
+    "pilot_n_per_arm": null,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T09",
+    "name": "Support learner",
+    "prerequisites": "T08",
+    "arms": [
+      "trained S",
+      "fixed policy",
+      "action-matched schedule"
+    ],
+    "unit": "independent triad",
+    "primary_outcome": "Marginal action-selection benefit",
+    "pilot_n_per_arm": null,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T10",
+    "name": "Affect-inspired weights",
+    "prerequisites": "T00; T08 before living deployment",
+    "arms": [
+      "none",
+      "reliability only",
+      "full proposed policy",
+      "shuffled history"
+    ],
+    "unit": "simulation then independent module deployment",
+    "primary_outcome": "Held-out utility/calibration and noninferiority",
+    "pilot_n_per_arm": null,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T11",
+    "name": "Independent teaching",
+    "prerequisites": "T04",
+    "arms": [
+      "B self training",
+      "trained A",
+      "untrained A",
+      "replay",
+      "software teacher"
+    ],
+    "unit": "independent dyad",
+    "primary_outcome": "B-only delayed result after verified separation",
+    "pilot_n_per_arm": null,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T12",
+    "name": "Astrocytic predictive contribution",
+    "prerequisites": "T04",
+    "arms": [
+      "neurons+environment",
+      "neurons+environment+astrocytes"
+    ],
+    "unit": "independent preparation",
+    "primary_outcome": "Held-out loss improvement",
+    "pilot_n_per_arm": null,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T13",
+    "name": "Selective astrocytic mechanism",
+    "prerequisites": "T12 and targeted assay qualification",
+    "arms": [
+      "targeted comparison",
+      "general-state control",
+      "unrelated-task control"
+    ],
+    "unit": "independent preparation",
+    "primary_outcome": "Selective causal effect with target engagement",
+    "pilot_n_per_arm": null,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T14",
+    "name": "Diversity and renewal",
+    "prerequisites": "T08",
+    "arms": [
+      "one addition",
+      "unchanged",
+      "retraining"
+    ],
+    "unit": "independent preparation",
+    "primary_outcome": "Contribution minus old-task cost",
+    "pilot_n_per_arm": null,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T15",
+    "name": "Physical joining",
+    "prerequisites": "T08 and new bridge qualification",
+    "arms": [
+      "physical",
+      "electronic",
+      "unjoined"
+    ],
+    "unit": "independent dyad",
+    "primary_outcome": "Route-specific function and quantified leakage",
+    "pilot_n_per_arm": null,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T16",
+    "name": "Mesh chain topology",
+    "prerequisites": "T00; T08 before living chain",
+    "arms": [
+      "depth 1",
+      "depth 2",
+      "depth 3",
+      "missing link",
+      "duplicate origin"
+    ],
+    "unit": "simulation then independent chains",
+    "primary_outcome": "Net utility, latency and ancestry integrity",
+    "pilot_n_per_arm": null,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  },
+  {
+    "id": "T17",
+    "name": "Independent replication",
+    "prerequisites": "frozen selected candidate",
+    "arms": [
+      "candidate",
+      "prespecified controls"
+    ],
+    "unit": "independent preparation/batch/site",
+    "primary_outcome": "Prospective confirmation of scoped claim",
+    "pilot_n_per_arm": null,
+    "pilot_n_total": null,
+    "confirmation_n": null,
+    "allocation": "Randomize within preparation batch after outcome-blind qualification",
+    "exclusions": "Predeclared technical/receiving rules; retain all enrollment and reasons",
+    "stop_rules": [
+      "physical fault or invalid support",
+      "exposure/session limit",
+      "candidate budget exhausted",
+      "prespecified scientific futility"
+    ],
+    "status": "PLANNED_NOT_RUN",
+    "analysis_record": null
+  }
+]

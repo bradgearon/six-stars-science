@@ -1,0 +1,445 @@
+{
+  "revision": "CE-ENG-001-A",
+  "status": "REFERENCE_CELL_FREE_NOT_FABRICATION_RELEASE",
+  "nominal_supply_V": 3.3,
+  "components": [
+    {
+      "ref": "U1",
+      "part": "Raspberry Pi Pico H",
+      "pins": {
+        "1": "MCU_PERMIT",
+        "2": "DONE",
+        "4": "WAKE",
+        "5": "LATCH_Q",
+        "6": "LOOP_OK",
+        "7": "MCU_READY",
+        "9": "PERMIT_OUT",
+        "30": "RESET_N",
+        "36": "3V3",
+        "38": "GND"
+      },
+      "note": "USB powered; other GPIOs unused; board ground pins are internally common"
+    },
+    {
+      "ref": "U2",
+      "part": "TPL5010DDCR",
+      "pins": {
+        "1": "3V3",
+        "2": "GND",
+        "3": "WD_DELAY",
+        "4": "DONE",
+        "5": "WAKE",
+        "6": "RESET_N"
+      },
+      "note": ""
+    },
+    {
+      "ref": "U3",
+      "part": "SN74LVC1G08DBVR",
+      "pins": {
+        "1": "LOOP_OK",
+        "2": "RESET_N",
+        "3": "GND",
+        "4": "HW_OK",
+        "5": "3V3"
+      },
+      "note": ""
+    },
+    {
+      "ref": "U4",
+      "part": "SN74LVC1G08DBVR",
+      "pins": {
+        "1": "LATCH_Q",
+        "2": "MCU_PERMIT",
+        "3": "GND",
+        "4": "PERMIT_RAW",
+        "5": "3V3"
+      },
+      "note": ""
+    },
+    {
+      "ref": "U7",
+      "part": "SN74LVC1G08DBVR",
+      "pins": {
+        "1": "HW_OK",
+        "2": "MCU_READY",
+        "3": "GND",
+        "4": "CLEAR_N",
+        "5": "3V3"
+      },
+      "note": ""
+    },
+    {
+      "ref": "U5",
+      "part": "SN74HC74N",
+      "pins": {
+        "1": "CLEAR_N",
+        "2": "3V3",
+        "3": "ARM_CLK",
+        "4": "3V3",
+        "5": "LATCH_Q",
+        "6": "NC_U5_6",
+        "7": "GND",
+        "8": "NC_U5_8",
+        "9": "NC_U5_9",
+        "10": "3V3",
+        "11": "GND",
+        "12": "GND",
+        "13": "GND",
+        "14": "3V3"
+      },
+      "note": ""
+    },
+    {
+      "ref": "U6",
+      "part": "SN74LVC1G17DBVR",
+      "pins": {
+        "1": "NC_U6_1",
+        "2": "ARM_FILTER",
+        "3": "GND",
+        "4": "ARM_CLK",
+        "5": "3V3"
+      },
+      "note": ""
+    },
+    {
+      "ref": "R1",
+      "part": "1.00k 1%",
+      "pins": {
+        "1": "WD_DELAY",
+        "2": "GND"
+      },
+      "note": ""
+    },
+    {
+      "ref": "R2",
+      "part": "100k 1%",
+      "pins": {
+        "1": "3V3",
+        "2": "RESET_N"
+      },
+      "note": ""
+    },
+    {
+      "ref": "R3",
+      "part": "1.00k 1%",
+      "pins": {
+        "1": "ARM_SWITCH",
+        "2": "ARM_FILTER"
+      },
+      "note": ""
+    },
+    {
+      "ref": "R4",
+      "part": "100k 1%",
+      "pins": {
+        "1": "ARM_FILTER",
+        "2": "GND"
+      },
+      "note": ""
+    },
+    {
+      "ref": "R5",
+      "part": "10k 1%",
+      "pins": {
+        "1": "LOOP_OK",
+        "2": "GND"
+      },
+      "note": ""
+    },
+    {
+      "ref": "R6",
+      "part": "10k 1%",
+      "pins": {
+        "1": "MCU_READY",
+        "2": "GND"
+      },
+      "note": ""
+    },
+    {
+      "ref": "R7",
+      "part": "10k 1%",
+      "pins": {
+        "1": "MCU_PERMIT",
+        "2": "GND"
+      },
+      "note": ""
+    },
+    {
+      "ref": "R8",
+      "part": "100 ohm 1%",
+      "pins": {
+        "1": "PERMIT_RAW",
+        "2": "PERMIT_OUT"
+      },
+      "note": ""
+    },
+    {
+      "ref": "R9",
+      "part": "10k 1%",
+      "pins": {
+        "1": "PERMIT_OUT",
+        "2": "GND"
+      },
+      "note": ""
+    },
+    {
+      "ref": "C1",
+      "part": "100nF X7R >=10V",
+      "pins": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "note": "Local bypass for U2"
+    },
+    {
+      "ref": "C2",
+      "part": "100nF X7R >=10V",
+      "pins": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "note": "Local bypass for U3"
+    },
+    {
+      "ref": "C3",
+      "part": "100nF X7R >=10V",
+      "pins": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "note": "Local bypass for U4"
+    },
+    {
+      "ref": "C4",
+      "part": "100nF X7R >=10V",
+      "pins": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "note": "Local bypass for U5"
+    },
+    {
+      "ref": "C5",
+      "part": "100nF X7R >=10V",
+      "pins": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "note": "Local bypass for U6"
+    },
+    {
+      "ref": "C6",
+      "part": "100nF X7R >=10V",
+      "pins": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "note": "Local bypass for U7"
+    },
+    {
+      "ref": "C7",
+      "part": "100nF X7R >=10V",
+      "pins": {
+        "1": "ARM_FILTER",
+        "2": "GND"
+      },
+      "note": ""
+    },
+    {
+      "ref": "C8",
+      "part": "10uF >=10V",
+      "pins": {
+        "1": "3V3",
+        "2": "GND"
+      },
+      "note": "Power-entry bulk; verify polarity if polarized"
+    },
+    {
+      "ref": "S_STOP",
+      "part": "NC maintained contact",
+      "pins": {
+        "1": "3V3",
+        "2": "STOP_CHAIN"
+      },
+      "note": ""
+    },
+    {
+      "ref": "S_COVER",
+      "part": "NC contact",
+      "pins": {
+        "1": "STOP_CHAIN",
+        "2": "LOOP_OK"
+      },
+      "note": ""
+    },
+    {
+      "ref": "S_ARM",
+      "part": "NO momentary button",
+      "pins": {
+        "1": "3V3",
+        "2": "ARM_SWITCH"
+      },
+      "note": ""
+    },
+    {
+      "ref": "J1",
+      "part": "2-pin keyed prototype test connector",
+      "pins": {
+        "1": "PERMIT_OUT",
+        "2": "GND"
+      },
+      "note": "TEST LOAD ONLY until vendor adapter approved"
+    }
+  ],
+  "nets": {
+    "MCU_PERMIT": [
+      "U1.1",
+      "U4.2",
+      "R7.1"
+    ],
+    "DONE": [
+      "U1.2",
+      "U2.4"
+    ],
+    "WAKE": [
+      "U1.4",
+      "U2.5"
+    ],
+    "LATCH_Q": [
+      "U1.5",
+      "U4.1",
+      "U5.5"
+    ],
+    "LOOP_OK": [
+      "U1.6",
+      "U3.1",
+      "R5.1",
+      "S_COVER.2"
+    ],
+    "MCU_READY": [
+      "U1.7",
+      "U7.2",
+      "R6.1"
+    ],
+    "PERMIT_OUT": [
+      "U1.9",
+      "R8.2",
+      "R9.1",
+      "J1.1"
+    ],
+    "RESET_N": [
+      "U1.30",
+      "U2.6",
+      "U3.2",
+      "R2.2"
+    ],
+    "3V3": [
+      "U1.36",
+      "U2.1",
+      "U3.5",
+      "U4.5",
+      "U7.5",
+      "U5.2",
+      "U5.4",
+      "U5.10",
+      "U5.14",
+      "U6.5",
+      "R2.1",
+      "C1.1",
+      "C2.1",
+      "C3.1",
+      "C4.1",
+      "C5.1",
+      "C6.1",
+      "C8.1",
+      "S_STOP.1",
+      "S_ARM.1"
+    ],
+    "GND": [
+      "U1.38",
+      "U2.2",
+      "U3.3",
+      "U4.3",
+      "U7.3",
+      "U5.7",
+      "U5.11",
+      "U5.12",
+      "U5.13",
+      "U6.3",
+      "R1.2",
+      "R4.2",
+      "R5.2",
+      "R6.2",
+      "R7.2",
+      "R9.2",
+      "C1.2",
+      "C2.2",
+      "C3.2",
+      "C4.2",
+      "C5.2",
+      "C6.2",
+      "C7.2",
+      "C8.2",
+      "J1.2"
+    ],
+    "WD_DELAY": [
+      "U2.3",
+      "R1.1"
+    ],
+    "HW_OK": [
+      "U3.4",
+      "U7.1"
+    ],
+    "PERMIT_RAW": [
+      "U4.4",
+      "R8.1"
+    ],
+    "CLEAR_N": [
+      "U7.4",
+      "U5.1"
+    ],
+    "ARM_CLK": [
+      "U5.3",
+      "U6.4"
+    ],
+    "NC_U5_6": [
+      "U5.6"
+    ],
+    "NC_U5_8": [
+      "U5.8"
+    ],
+    "NC_U5_9": [
+      "U5.9"
+    ],
+    "NC_U6_1": [
+      "U6.1"
+    ],
+    "ARM_FILTER": [
+      "U6.2",
+      "R3.2",
+      "R4.1",
+      "C7.1"
+    ],
+    "ARM_SWITCH": [
+      "R3.1",
+      "S_ARM.2"
+    ],
+    "STOP_CHAIN": [
+      "S_STOP.2",
+      "S_COVER.1"
+    ]
+  },
+  "not_connected": [
+    "NC_U5_6",
+    "NC_U5_8",
+    "NC_U5_9",
+    "NC_U6_1"
+  ],
+  "excluded": [
+    "culture electrode driver",
+    "mains switching",
+    "vendor proprietary internal electronics",
+    "released PCB layout"
+  ]
+}

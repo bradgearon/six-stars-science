@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ChristEye research question v1.0",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "question_id",
+    "category",
+    "priority",
+    "assigned_star",
+    "question",
+    "context",
+    "response_schema",
+    "execution_status",
+    "origin",
+    "source_ids",
+    "source_paths",
+    "blocking_parameters",
+    "expected_evidence",
+    "original_row"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "question_id": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string"
+    },
+    "assigned_star": {
+      "type": "string"
+    },
+    "question": {
+      "type": "string"
+    },
+    "context": {
+      "type": "string"
+    },
+    "response_schema": {
+      "type": "string"
+    },
+    "execution_status": {
+      "type": "string"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "source_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocking_parameters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expected_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "original_row": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "SIMULATION_ONLY",
+  "rho_A": 0.2,
+  "rho_G": 0.1,
+  "anxiety_coefficients": {
+    "error": 0.4,
+    "missingness": 0.4,
+    "novelty": 0.2
+  },
+  "theta0": 0.6,
+  "theta_max": 0.9,
+  "kA": 0.25,
+  "max_hops": 1,
+  "host_heartbeat_ms": 50,
+  "host_stale_ms": 150,
+  "watchdog_nominal_ms": 200,
+  "manual_rearm_required": true,
+  "live_profiles": {},
+  "physical_limits_released": false
+}

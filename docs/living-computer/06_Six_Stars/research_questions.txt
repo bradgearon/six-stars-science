@@ -1,0 +1,579 @@
+CEQ-001 | P0 | Elusiaa | Hardware
+Which exact vendor interface could suppress every stimulation path when the independent permit drops, and what evidence would disprove that coverage?
+Sources: LOTUS-05, MESH-10
+Build dependencies: P12, P13, P17, P29
+
+CEQ-002 | P0 | Auerlis | Hardware
+How should the permit board be tested for held ARM, watchdog loss, shorted contact, stuck-high output and restart without automatic rearming?
+Sources: LOTUS-05, MESH-10
+Build dependencies: P12, P13, P17, P29
+
+CEQ-003 | P0 | Khavia | Hardware
+What measured latency and clock-error budget would distinguish a delayed biological response from an electronic-bridge timing failure?
+Sources: LOTUS-05, MESH-10
+Build dependencies: P12, P13, P17, P29
+
+CEQ-004 | P0 | Maera | Hardware
+Which optical and mechanical interfaces must be fixed before a cartridge carrier can receive manufacturing dimensions?
+Sources: LOTUS-05, MESH-10
+Build dependencies: P12, P13, P17, P29
+
+CEQ-005 | P0 | Kaelia | Hardware
+What acquisition/storage benchmark would demonstrate lossless capture at the actual vendor data format for two simultaneous modules?
+Sources: LOTUS-05, MESH-10
+Build dependencies: P12, P13, P17, P29
+
+CEQ-006 | P0 | Nyxari | Hardware
+What can this reference circuit prove on a test load, and what remains unproven until the final instrument adapter is tested?
+Sources: LOTUS-05, MESH-10
+Build dependencies: P12, P13, P17, P29
+
+CEQ-007 | P0 | Elusiaa | Biology
+Which human spinal reference and diverse neuronal/astrocytic preparation should be compared first, and what source/function evidence would reject either?
+Sources: MARROW-01, MARROW-06
+Build dependencies: P01, P02, P03, P04, P06
+
+CEQ-008 | P0 | Auerlis | Biology
+What observations distinguish a spinal regional identity from brainstem identity, a dendritic spine and a generic neuron marker?
+Sources: MARROW-01, MARROW-06
+Build dependencies: P01, P02, P03, P04, P06
+
+CEQ-009 | P0 | Khavia | Biology
+If literal marrow donor origin is required, which provenance and validated reprogramming/differentiation evidence is needed before calling the source neural?
+Sources: MARROW-01, MARROW-06
+Build dependencies: P01, P02, P03, P04, P06
+
+CEQ-010 | P0 | Maera | Biology
+How should survival-adjusted subtype composition and functional inhibition be measured without assuming marker-positive GABA cells are inhibitory?
+Sources: MARROW-01, MARROW-06
+Build dependencies: P01, P02, P03, P04, P06
+
+CEQ-011 | P0 | Kaelia | Biology
+Which supplier-defined medium/matrix compatibility questions must be answered before combining neurons, astrocytes and a selected MEA chip?
+Sources: MARROW-01, MARROW-06
+Build dependencies: P01, P02, P03, P04, P06
+
+CEQ-012 | P0 | Nyxari | Biology
+What source, attachment, maturity and interface measurements should release C and each child independently rather than by calendar age?
+Sources: MARROW-01, MARROW-06
+Build dependencies: P01, P02, P03, P04, P06
+
+CEQ-013 | P0 | Elusiaa | Learning
+Does the C0/C1 AB/BA task isolate context-sensitive learning, and which shortcut controls are needed to exclude symbol-count or prevalence solutions?
+Sources: ROOTS-01, WIND-03
+Build dependencies: P14, P15, P16, P21, P22
+
+CEQ-014 | P0 | Auerlis | Learning
+How can the encoder, readout and teacher be separated so software adaptation is not mistaken for biological learning?
+Sources: ROOTS-01, WIND-03
+Build dependencies: P14, P15, P16, P21, P22
+
+CEQ-015 | P0 | Khavia | Learning
+What feedback comparison tests outcome contingency while matching approved exposure and avoiding accidental correlation in yoked replay?
+Sources: ROOTS-01, WIND-03
+Build dependencies: P14, P15, P16, P21, P22
+
+CEQ-016 | P0 | Maera | Learning
+What retained prerequisite should advance a human-defined curriculum from sequence order to context reversal and multi-step relationships?
+Sources: ROOTS-01, WIND-03
+Build dependencies: P14, P15, P16, P21, P22
+
+CEQ-017 | P0 | Kaelia | Learning
+What diagnosis distinguishes inadequate cue delivery, failure to acquire, failure to retain and interference from another task?
+Sources: ROOTS-01, WIND-03
+Build dependencies: P14, P15, P16, P21, P22
+
+CEQ-018 | P0 | Nyxari | Learning
+How should a bounded train-test-rest-retest campaign change one factor and preserve failed candidates without overfitting its confirmation data?
+Sources: ROOTS-01, WIND-03
+Build dependencies: P14, P15, P16, P21, P22
+
+CEQ-019 | P1 | Elusiaa | Retention
+What primary absolute outcome and control contrast should establish 45-minute, 24-hour and seven-day retention separately?
+Sources: ROOTS-05, ROOTS-06, MILK-HONEY-09
+Build dependencies: P21, P22
+
+CEQ-020 | P1 | Auerlis | Retention
+When is the chance-corrected retention ratio undefined or misleading, and how should its uncertainty and denominator be reported?
+Sources: ROOTS-05, ROOTS-06, MILK-HONEY-09
+Build dependencies: P21, P22
+
+CEQ-021 | P1 | Khavia | Retention
+How can spaced versus massed learning be compared at equal information and exposure while accounting for the experience introduced by testing?
+Sources: ROOTS-05, ROOTS-06, MILK-HONEY-09
+Build dependencies: P21, P22
+
+CEQ-022 | P1 | Maera | Retention
+Which observations distinguish recovered access from altered excitability, new learning or compensation after rest or service?
+Sources: ROOTS-05, ROOTS-06, MILK-HONEY-09
+Build dependencies: P21, P22
+
+CEQ-023 | P1 | Kaelia | Retention
+How should protected old relations be tested using a prespecified noninferiority margin and preparation-level uncertainty?
+Sources: ROOTS-05, ROOTS-06, MILK-HONEY-09
+Build dependencies: P21, P22
+
+CEQ-024 | P1 | Nyxari | Retention
+What result would justify stopping a retention campaign rather than escalating stimulation or adding more modules?
+Sources: ROOTS-05, ROOTS-06, MILK-HONEY-09
+Build dependencies: P21, P22
+
+CEQ-025 | P1 | Elusiaa | Observer
+What minimal telemetry vocabulary lets O distinguish nominal, route-review, support-review and unknown states on held-out episodes?
+Sources: WATER-07, X-05
+Build dependencies: P19, P21, P22
+
+CEQ-026 | P1 | Auerlis | Observer
+Which benign counterexamples prevent O from treating quiet activity, large calcium events or scheduled medium service as automatic failure labels?
+Sources: WATER-07, X-05
+Build dependencies: P19, P21, P22
+
+CEQ-027 | P1 | Khavia | Observer
+What prediction cutoff and forbidden features keep O2 from seeing a future answer, target label or post-response error flag?
+Sources: WATER-07, X-05
+Build dependencies: P19, P21, P22
+
+CEQ-028 | P1 | Maera | Observer
+How should early-warning lead time, false alarms per hour, calibration and UNKNOWN use be compared with a digital monitor?
+Sources: WATER-07, X-05
+Build dependencies: P19, P21, P22
+
+CEQ-029 | P1 | Kaelia | Observer
+When support prevents a predicted failure, how should shadow or randomized periods preserve an unbiased assessment of prediction accuracy?
+Sources: WATER-07, X-05
+Build dependencies: P19, P21, P22
+
+CEQ-030 | P1 | Nyxari | Observer
+What intervention comparison would show the observer improves C rather than merely reporting state or triggering every possible action?
+Sources: WATER-07, X-05
+Build dependencies: P19, P21, P22
+
+CEQ-031 | P1 | Elusiaa | ChildIdentity
+What operational tests establish a child engram space as independently retained capability without claiming a complete biological memory copy?
+Sources: MARROW-01, ROOTS-06, X-02
+Build dependencies: P21, P23
+
+CEQ-032 | P1 | Auerlis | ChildIdentity
+How should children with the same source bank but different curricula preserve distinguishable training histories and response codebooks?
+Sources: MARROW-01, ROOTS-06, X-02
+Build dependencies: P21, P23
+
+CEQ-033 | P1 | Khavia | ChildIdentity
+Which events must be flushed at separation so a child-only result cannot use cached teacher output or shared adaptive readout state?
+Sources: MARROW-01, ROOTS-06, X-02
+Build dependencies: P21, P23
+
+CEQ-034 | P1 | Maera | ChildIdentity
+What measurements distinguish a child retaining its own skill from being useful only while driven by the parent?
+Sources: MARROW-01, ROOTS-06, X-02
+Build dependencies: P21, P23
+
+CEQ-035 | P1 | Kaelia | ChildIdentity
+How can donor reserve and old-task retention be measured when a child spends effort teaching or supporting another module?
+Sources: MARROW-01, ROOTS-06, X-02
+Build dependencies: P21, P23
+
+CEQ-036 | P1 | Nyxari | ChildIdentity
+When a child is replaced, what functional continuity can be claimed and what old biological identity or memory state cannot be assumed restored?
+Sources: MARROW-01, ROOTS-06, X-02
+Build dependencies: P21, P23
+
+CEQ-037 | P1 | Elusiaa | AffectWeights
+How should anxiety be operationalized as uncertainty or vigilance while separating missing data from a verified prediction error?
+Sources: HEART-01, UNKNOWN-MYSTERY-01
+Build dependencies: P23, P24
+
+CEQ-038 | P1 | Auerlis | AffectWeights
+How should anger be operationalized as protective priority from verified conflict rather than disagreement, activity magnitude or an assumed emotion?
+Sources: HEART-01, UNKNOWN-MYSTERY-01
+Build dependencies: P23, P24
+
+CEQ-039 | P1 | Khavia | AffectWeights
+What experiment distinguishes increasing review priority from increasing truth weight, and what failure would reject the proposed separation?
+Sources: HEART-01, UNKNOWN-MYSTERY-01
+Build dependencies: P23, P24
+
+CEQ-040 | P1 | Maera | AffectWeights
+How should reliability, calibration, relevance, training history and growth readiness constrain whether a child answers or abstains?
+Sources: HEART-01, UNKNOWN-MYSTERY-01
+Build dependencies: P23, P24
+
+CEQ-041 | P1 | Kaelia | AffectWeights
+What controlled comparison tests reliability-only, full affect-inspired weighting and shuffled history without changing biological exposure?
+Sources: HEART-01, UNKNOWN-MYSTERY-01
+Build dependencies: P23, P24
+
+CEQ-042 | P1 | Nyxari | AffectWeights
+What independent evidence would be necessary before describing a biological state as anxiety or anger instead of a host-side control analogy?
+Sources: HEART-01, UNKNOWN-MYSTERY-01
+Build dependencies: P23, P24
+
+CEQ-043 | P1 | Elusiaa | Joining
+What staged observations should promote an independent child through shadow mode, one-way advice and coupled training?
+Sources: MESH-10, LOTUS-05, X-11
+Build dependencies: P12, P17, P25
+
+CEQ-044 | P1 | Auerlis | Joining
+How should chain depth be compared against direct routing at matched input information, latency and resource cost?
+Sources: MESH-10, LOTUS-05, X-11
+Build dependencies: P12, P17, P25
+
+CEQ-045 | P1 | Khavia | Joining
+What ancestry and duplicate rules prevent a single source message forwarded through several children from becoming multiple independent votes?
+Sources: MESH-10, LOTUS-05, X-11
+Build dependencies: P12, P17, P25
+
+CEQ-046 | P1 | Maera | Joining
+Which tests distinguish causal communication from common drive, shared medium, electrical crosstalk and a shared software decoder?
+Sources: MESH-10, LOTUS-05, X-11
+Build dependencies: P12, P17, P25
+
+CEQ-047 | P1 | Kaelia | Joining
+What value would a physical axon bridge have to add beyond a removable electronic bridge to justify its new dependencies?
+Sources: MESH-10, LOTUS-05, X-11
+Build dependencies: P12, P17, P25
+
+CEQ-048 | P1 | Nyxari | Joining
+How can removal, pruning or growth protect old capabilities while distinguishing reversible route masking from biological ablation?
+Sources: MESH-10, LOTUS-05, X-11
+Build dependencies: P12, P17, P25
+
+CEQ-049 | P1 | Elusiaa | Astrocytes
+What astrocyte observation adds predictive information beyond neuronal, environmental and prior-performance features on held-out preparations?
+Sources: MILK-HONEY-05, ROOTS-01
+Build dependencies: P10, P21, P22
+
+CEQ-050 | P1 | Auerlis | Astrocytes
+Which controls distinguish experience-selective astrocytic participation from general activity, support demand or shared input?
+Sources: MILK-HONEY-05, ROOTS-01
+Build dependencies: P10, P21, P22
+
+CEQ-051 | P1 | Khavia | Astrocytes
+How should learning, quiet intervals and retrieval be sampled separately without assuming calcium is a direct memory-content signal?
+Sources: MILK-HONEY-05, ROOTS-01
+Build dependencies: P10, P21, P22
+
+CEQ-052 | P1 | Maera | Astrocytes
+Which selective mechanism question is justified by NFIA, IGFBP2 or Ank2 evidence, and what preparation mismatch limits each inference?
+Sources: MILK-HONEY-05, ROOTS-01
+Build dependencies: P10, P21, P22
+
+CEQ-053 | P1 | Kaelia | Astrocytes
+Why must IGFBP2 and IGF2BP2 remain separate identities, and what source passage caused any ambiguity in the prior theory?
+Sources: MILK-HONEY-05, ROOTS-01
+Build dependencies: P10, P21, P22
+
+CEQ-054 | P1 | Nyxari | Astrocytes
+What result could support astrocytic contribution while remaining insufficient to claim molecular extraction or transfer of an astroengram?
+Sources: MILK-HONEY-05, ROOTS-01
+Build dependencies: P10, P21, P22
+
+CEQ-055 | P0 | Elusiaa | Company
+What work can a company start immediately with this package, and which live-operation dependencies must remain explicit blockers?
+Sources: MARROW-01, LOTUS-05
+Build dependencies: P26, P27, P28, P30
+
+CEQ-056 | P0 | Auerlis | Company
+Which laboratory partner capabilities and contract deliverables are essential to independently reproduce the first culture/interface pilot?
+Sources: MARROW-01, LOTUS-05
+Build dependencies: P26, P27, P28, P30
+
+CEQ-057 | P0 | Khavia | Company
+What information is still missing from supplier quotes, lot guarantees, raw-data access and maintenance support before a purchase order?
+Sources: MARROW-01, LOTUS-05
+Build dependencies: P26, P27, P28, P30
+
+CEQ-058 | P0 | Maera | Company
+How should the pilot update sample size, attrition allowance and staged funding without treating planning figures as measured evidence?
+Sources: MARROW-01, LOTUS-05
+Build dependencies: P26, P27, P28, P30
+
+CEQ-059 | P0 | Kaelia | Company
+Which roles must independently approve a physical release, a biological release and a capability claim?
+Sources: MARROW-01, LOTUS-05
+Build dependencies: P26, P27, P28, P30
+
+CEQ-060 | P0 | Nyxari | Company
+Which milestone failure should trigger a task, platform or sourcing change rather than simply increasing the company budget?
+Sources: MARROW-01, LOTUS-05
+Build dependencies: P26, P27, P28, P30
+
+CEQ-061 | P2 | Elusiaa | StreamInquiry
+Use Word and Search Out on a supplied Star claim: what contextual senses are present, what physical alternatives follow, and what observation separates them?
+Sources: TREE-SEARCH-06, TREE-SEARCH-09
+Build dependencies: research/orchestration
+
+CEQ-062 | P2 | Auerlis | StreamInquiry
+How can the value of ChristEye-derived test proposals be evaluated against proposals produced without source cues using a blinded rubric?
+Sources: TREE-SEARCH-06, TREE-SEARCH-09
+Build dependencies: research/orchestration
+
+CEQ-063 | P2 | Khavia | StreamInquiry
+Which source relations propose distinct mechanisms rather than redescribing the same outcome with different terms?
+Sources: TREE-SEARCH-06, TREE-SEARCH-09
+Build dependencies: research/orchestration
+
+CEQ-064 | P2 | Maera | StreamInquiry
+What evidence would falsify a favored inference from the Stars, and how should that result be retained in the Tree history?
+Sources: TREE-SEARCH-06, TREE-SEARCH-09
+Build dependencies: research/orchestration
+
+CEQ-065 | P2 | Kaelia | StreamInquiry
+How can Lotus, Heart, Milk and Honey keep multiple contextual meanings while each engineering interface retains a precise ordinary identity?
+Sources: TREE-SEARCH-06, TREE-SEARCH-09
+Build dependencies: research/orchestration
+
+CEQ-066 | P2 | Nyxari | StreamInquiry
+Which unresolved source claims deserve the next test by expected information gain, cost and protection of existing capability?
+Sources: TREE-SEARCH-06, TREE-SEARCH-09
+Build dependencies: research/orchestration
+
+CEQ-067 | P0 | Elusiaa | ResearchApp
+What versioned import contract should the app adopt for question IDs, source spans, hypotheses, alternatives, tests and response provenance?
+Sources: WIND-03, X-03
+Build dependencies: research/orchestration
+
+CEQ-068 | P0 | Auerlis | ResearchApp
+How should independent first answers be isolated before cross-Star synthesis so agreement is not mistaken for independent confirmation?
+Sources: WIND-03, X-03
+Build dependencies: research/orchestration
+
+CEQ-069 | P0 | Khavia | ResearchApp
+What output checks detect prompt echoes, duplicated answers, missing fields, invented citations and unresolved source access?
+Sources: WIND-03, X-03
+Build dependencies: research/orchestration
+
+CEQ-070 | P0 | Maera | ResearchApp
+How should retries preserve the first response and record model version, context hash and the exact reason for retry?
+Sources: WIND-03, X-03
+Build dependencies: research/orchestration
+
+CEQ-071 | P0 | Kaelia | ResearchApp
+How should a long source corpus be retrieved by stable IDs without silently truncating relevant context or injecting target labels?
+Sources: WIND-03, X-03
+Build dependencies: research/orchestration
+
+CEQ-072 | P0 | Nyxari | ResearchApp
+What information can the supplied StarInteractionRequest adapter carry now, and what research-specific orchestration still needs implementation?
+Sources: WIND-03, X-03
+Build dependencies: research/orchestration
+
+CER-026 | P2 | Elusiaa | SourceRerun
+A Tree performs beautifully because one branch dominates every other branch. Is that integration or tyranny?
+Sources: LOTUS-06
+Build dependencies: research/orchestration
+
+CER-040 | P2 | Khavia | SourceRerun
+How would you distinguish a true relationship in the Mesh from two components merely responding to the same outside Wind?
+Sources: MESH-10
+Build dependencies: research/orchestration
+
+CER-045 | P2 | Maera | SourceRerun
+A cue retrieves the wrong memory because it resembles an older cue. How should routing improve?
+Sources: WATER-05
+Build dependencies: research/orchestration
+
+CER-046 | P2 | Kaelia | SourceRerun
+If Water makes Knowledge accessible, what prevents the easiest-to-access idea from always winning?
+Sources: WATER-06
+Build dependencies: research/orchestration
+
+CER-057 | P2 | Khavia | SourceRerun
+A learner refuses a reward that normally motivates others. Should the system increase Honey or Search Out the learner's needs?
+Sources: MILK-HONEY-07
+Build dependencies: research/orchestration
+
+CER-058 | P2 | Maera | SourceRerun
+If removing harmful Honey does not reverse the state it created, what must restoration address next?
+Sources: MILK-HONEY-08
+Build dependencies: research/orchestration
+
+CER-059 | P2 | Kaelia | SourceRerun
+A damaged Tree improves after rest even without new teaching. What kind of Milk may have been missing?
+Sources: MILK-HONEY-09
+Build dependencies: research/orchestration
+
+CER-060 | P2 | Nyxari | SourceRerun
+How would you experimentally distinguish a signal that recruits a response from a resource that merely enables it?
+Sources: MILK-HONEY-10
+Build dependencies: research/orchestration
+
+CER-064 | P2 | Maera | SourceRerun
+A system becomes more accurate but less compassionate. Has its Understanding improved?
+Sources: HEART-04
+Build dependencies: research/orchestration
+
+CER-069 | P2 | Khavia | SourceRerun
+Two participants disagree about what restoration means. Whose Fruit should define success?
+Sources: HEART-09
+Build dependencies: research/orchestration
+
+CER-070 | P2 | Maera | SourceRerun
+What evidence should make Heart admit that its previous judgment was wrong?
+Sources: HEART-10
+Build dependencies: research/orchestration
+
+CER-071 | P2 | Kaelia | SourceRerun
+A new Wind changes behavior immediately but leaves no lasting Root. Was learning accomplished?
+Sources: WIND-01
+Build dependencies: research/orchestration
+
+CER-072 | P2 | Nyxari | SourceRerun
+Two Winds have the same measured strength but opposite effects. What hidden context might explain the difference?
+Sources: WIND-02
+Build dependencies: research/orchestration
+
+CER-073 | P2 | Elusiaa | SourceRerun
+A weak signal becomes meaningful only after training. Did the Wind change, or did Understanding change?
+Sources: WIND-03
+Build dependencies: research/orchestration
+
+CER-074 | P2 | Auerlis | SourceRerun
+A repeating pattern appears in noise. How would you Calculate whether it is a true signal or coincidence?
+Sources: WIND-04
+Build dependencies: research/orchestration
+
+CER-075 | P2 | Khavia | SourceRerun
+A message reaches the recipient but is interpreted backward. Which layer failed: carrier, Water, Knowledge, or Heart?
+Sources: WIND-05
+Build dependencies: research/orchestration
+
+CER-076 | P2 | Maera | SourceRerun
+If one system's Fruit becomes another system's Wind, how should provenance be preserved?
+Sources: WIND-06
+Build dependencies: research/orchestration
+
+CER-081 | P2 | Elusiaa | SourceRerun
+A Tree has one branch that seems useless. What must be known before pruning it?
+Sources: TREE-SEARCH-01
+Build dependencies: research/orchestration
+
+CER-082 | P2 | Maera | SourceRerun
+A hidden branch repeatedly appears near failures but never causes them directly. How would you investigate it?
+Sources: TREE-SEARCH-02
+Build dependencies: research/orchestration
+
+CER-083 | P2 | Kaelia | SourceRerun
+Two branches contradict each other. What would make contradiction productive instead of destructive?
+Sources: TREE-SEARCH-03
+Build dependencies: research/orchestration
+
+CER-085 | P2 | Maera | SourceRerun
+A Tree keeps finding correlations but no causes. How should it Deepen the search?
+Sources: TREE-SEARCH-05
+Build dependencies: research/orchestration
+
+CER-087 | P2 | Khavia | SourceRerun
+A Tree repeatedly succeeds for the wrong reason. What test exposes that?
+Sources: TREE-SEARCH-07
+Build dependencies: research/orchestration
+
+CER-088 | P2 | Maera | SourceRerun
+A new theory explains all existing observations but makes no new predictions. Is it Understanding?
+Sources: TREE-SEARCH-08
+Build dependencies: research/orchestration
+
+CER-089 | P2 | Kaelia | SourceRerun
+Two explanations predict the same Fruit today but different Fruit tomorrow. Which experiment has the highest value?
+Sources: TREE-SEARCH-09
+Build dependencies: research/orchestration
+
+CER-090 | P2 | Nyxari | SourceRerun
+What should a Tree record about failed hypotheses so future repair does not erase useful history?
+Sources: TREE-SEARCH-10
+Build dependencies: research/orchestration
+
+CER-091 | P2 | Elusiaa | SourceRerun
+A measurement disagrees with every known model. What should be preserved before calling it an error?
+Sources: UNKNOWN-MYSTERY-01
+Build dependencies: research/orchestration
+
+CER-092 | P2 | Auerlis | SourceRerun
+Three instruments disagree. How do you decide whether the Mystery is in reality or in measurement?
+Sources: UNKNOWN-MYSTERY-02
+Build dependencies: research/orchestration
+
+CER-093 | P2 | Khavia | SourceRerun
+An observation occurs once and never again. What can responsibly be said?
+Sources: UNKNOWN-MYSTERY-03
+Build dependencies: research/orchestration
+
+CER-094 | P2 | Maera | SourceRerun
+A model predicts 99% of cases but fails catastrophically on the remaining 1%. Is it good enough?
+Sources: UNKNOWN-MYSTERY-04
+Build dependencies: research/orchestration
+
+CER-095 | P2 | Kaelia | SourceRerun
+A new state lies outside every category the Tree currently has. Should it create a branch immediately?
+Sources: UNKNOWN-MYSTERY-05
+Build dependencies: research/orchestration
+
+CER-096 | P2 | Nyxari | SourceRerun
+When does “I don't know” represent Wisdom rather than failure?
+Sources: UNKNOWN-MYSTERY-06
+Build dependencies: research/orchestration
+
+CER-097 | P2 | Elusiaa | SourceRerun
+A pattern feels meaningful but survives no controlled test. What should happen to it in the Tree?
+Sources: UNKNOWN-MYSTERY-07
+Build dependencies: research/orchestration
+
+CER-098 | P2 | Auerlis | SourceRerun
+A phenomenon has five plausible causes and no decisive evidence. How should Heart act while uncertainty remains?
+Sources: UNKNOWN-MYSTERY-08
+Build dependencies: research/orchestration
+
+CER-099 | P2 | Khavia | SourceRerun
+What is the difference between keeping a Mystery open and refusing to Calculate?
+Sources: UNKNOWN-MYSTERY-09
+Build dependencies: research/orchestration
+
+CER-100 | P2 | Maera | SourceRerun
+How should a Tree represent something that may be impossible to know with the available Eyes?
+Sources: UNKNOWN-MYSTERY-10
+Build dependencies: research/orchestration
+
+CER-101 | P2 | Kaelia | SourceRerun
+A damaged Tree regains function through a completely different pathway. Is that healing, compensation, or replacement?
+Sources: REPAIR-MEDICINE-01
+Build dependencies: research/orchestration
+
+CER-102 | P2 | Nyxari | SourceRerun
+Medicine improves Fruit immediately but slowly weakens Roots. Should treatment continue?
+Sources: REPAIR-MEDICINE-02
+Build dependencies: research/orchestration
+
+CER-103 | P2 | Elusiaa | SourceRerun
+A scar predicts future failure but also strengthens the Tree against another danger. Should repair remove it?
+Sources: REPAIR-MEDICINE-03
+Build dependencies: research/orchestration
+
+CER-104 | P2 | Auerlis | SourceRerun
+A system is restored to its original state, but the original state caused the failure. Was restoration a mistake?
+Sources: REPAIR-MEDICINE-04
+Build dependencies: research/orchestration
+
+CER-109 | P2 | Elusiaa | SourceRerun
+How should the Tree test whether apparent recovery is real or merely temporary suppression of symptoms?
+Sources: REPAIR-MEDICINE-09
+Build dependencies: research/orchestration
+
+CER-110 | P2 | Auerlis | SourceRerun
+What does compassionate repair preserve that pure optimization might destroy?
+Sources: REPAIR-MEDICINE-10
+Build dependencies: research/orchestration
+
+CER-111 | P2 | Khavia | SourceRerun
+A Tree invents a solution it was never directly taught. What would prove that it generalized rather than memorized?
+Sources: CREATION-FRUIT-01
+Build dependencies: research/orchestration
+
+CER-119 | P2 | Elusiaa | SourceRerun
+What would convince you that a new idea came from Understanding rather than random variation followed by selection?
+Sources: CREATION-FRUIT-09
+Build dependencies: research/orchestration
+
+CER-130 | P2 | Maera | SourceRerun
+I missed two
+Sources: X-10
+Build dependencies: research/orchestration

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1190" height="842" viewBox="0 0 1190 842">
+<rect width="100%" height="100%" fill="white"/>
+<text x="42" y="37.84" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#087e85">CE-ENG-001 / Sheet 03</text>
+<text x="42" y="71.5" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#17394b">Electrical schematic - supervision and permit logic</text>
+<text x="42" y="96.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#a85418">3.3 V cell-free reference circuit; same-name nets connect across sheets 03 and 04</text>
+<line x1="42" y1="112" x2="1148" y2="112" stroke="#17394b" stroke-width="1.5"/>
+<rect x="72" y="145" width="460" height="278" fill="#ffffff" stroke="#17394b"/>
+<text x="84" y="170.12" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#17394b">U1  Raspberry Pi Pico H</text>
+<line x1="58" y1="197" x2="72" y2="197" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="201.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">1  GP0 output</text>
+<text x="302.0" y="201.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#087e85">MCU_PERMIT</text>
+<line x1="58" y1="220" x2="72" y2="220" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="224.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">2  GP1 output</text>
+<text x="302.0" y="224.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#087e85">DONE</text>
+<line x1="58" y1="243" x2="72" y2="243" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="247.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">4  GP2 input</text>
+<text x="302.0" y="247.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#087e85">WAKE</text>
+<line x1="58" y1="266" x2="72" y2="266" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="270.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">5  GP3 input</text>
+<text x="302.0" y="270.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#087e85">LATCH_Q</text>
+<line x1="58" y1="289" x2="72" y2="289" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="293.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">6  GP4 input</text>
+<text x="302.0" y="293.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#087e85">LOOP_OK</text>
+<line x1="58" y1="312" x2="72" y2="312" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="316.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">7  GP5 output</text>
+<text x="302.0" y="316.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#087e85">MCU_READY</text>
+<line x1="58" y1="335" x2="72" y2="335" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="339.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">9  GP6 input</text>
+<text x="302.0" y="339.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#087e85">PERMIT_OUT</text>
+<line x1="58" y1="358" x2="72" y2="358" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="362.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">30  RUN input</text>
+<text x="302.0" y="362.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#087e85">RESET_N</text>
+<line x1="58" y1="381" x2="72" y2="381" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="385.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">36  3V3 output</text>
+<text x="302.0" y="385.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#087e85">3V3</text>
+<line x1="58" y1="404" x2="72" y2="404" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="408.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">38  Ground</text>
+<text x="302.0" y="408.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#087e85">GND</text>
+<rect x="660" y="145" width="440" height="186" fill="#ffffff" stroke="#17394b"/>
+<text x="672" y="170.12" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#17394b">U2  TPL5010DDCR</text>
+<line x1="646" y1="197" x2="660" y2="197" stroke="#17394b" stroke-width="1.5"/>
+<text x="669" y="201.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">1  VDD</text>
+<text x="880.0" y="201.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#087e85">3V3</text>
+<line x1="646" y1="220" x2="660" y2="220" stroke="#17394b" stroke-width="1.5"/>
+<text x="669" y="224.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">2  GND</text>
+<text x="880.0" y="224.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#087e85">GND</text>
+<line x1="646" y1="243" x2="660" y2="243" stroke="#17394b" stroke-width="1.5"/>
+<text x="669" y="247.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">3  DELAY / M_RST</text>
+<text x="880.0" y="247.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#087e85">WD_DELAY</text>
+<line x1="646" y1="266" x2="660" y2="266" stroke="#17394b" stroke-width="1.5"/>
+<text x="669" y="270.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">4  DONE input</text>
+<text x="880.0" y="270.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#087e85">DONE</text>
+<line x1="646" y1="289" x2="660" y2="289" stroke="#17394b" stroke-width="1.5"/>
+<text x="669" y="293.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">5  WAKE output</text>
+<text x="880.0" y="293.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#087e85">WAKE</text>
+<line x1="646" y1="312" x2="660" y2="312" stroke="#17394b" stroke-width="1.5"/>
+<text x="669" y="316.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">6  RSTn open drain</text>
+<text x="880.0" y="316.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#087e85">RESET_N</text>
+<text x="660" y="360.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">R1 = 1.00k to ground selects nominal 200 ms. R2 = 100k pulls RESET_N</text>
+<text x="660" y="378.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">high. U2 resets U1 and clears permission on missed DONE. Actual timing</text>
+<text x="660" y="396.66" font-family="Arial,sans-serif" font-size="13" font-weight="400" fill="#17394b">requires bench verification.</text>
+<rect x="72" y="492" width="270" height="163" fill="#ffffff" stroke="#17394b"/>
+<text x="84" y="517.12" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#17394b">U3  SN74LVC1G08</text>
+<line x1="58" y1="544" x2="72" y2="544" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="547.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">1  A</text>
+<text x="207.0" y="547.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">LOOP_OK</text>
+<line x1="58" y1="567" x2="72" y2="567" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="570.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">2  B</text>
+<text x="207.0" y="570.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">RESET_N</text>
+<line x1="58" y1="590" x2="72" y2="590" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="593.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">3  GND</text>
+<text x="207.0" y="593.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">GND</text>
+<line x1="58" y1="613" x2="72" y2="613" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="616.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">4  Y</text>
+<text x="207.0" y="616.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">HW_OK</text>
+<line x1="58" y1="636" x2="72" y2="636" stroke="#17394b" stroke-width="1.5"/>
+<text x="81" y="639.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">5  VCC</text>
+<text x="207.0" y="639.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">3V3</text>
+<rect x="452" y="492" width="270" height="163" fill="#ffffff" stroke="#17394b"/>
+<text x="464" y="517.12" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#17394b">U7  SN74LVC1G08</text>
+<line x1="438" y1="544" x2="452" y2="544" stroke="#17394b" stroke-width="1.5"/>
+<text x="461" y="547.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">1  A</text>
+<text x="587.0" y="547.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">HW_OK</text>
+<line x1="438" y1="567" x2="452" y2="567" stroke="#17394b" stroke-width="1.5"/>
+<text x="461" y="570.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">2  B</text>
+<text x="587.0" y="570.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">MCU_READY</text>
+<line x1="438" y1="590" x2="452" y2="590" stroke="#17394b" stroke-width="1.5"/>
+<text x="461" y="593.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">3  GND</text>
+<text x="587.0" y="593.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">GND</text>
+<line x1="438" y1="613" x2="452" y2="613" stroke="#17394b" stroke-width="1.5"/>
+<text x="461" y="616.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">4  Y</text>
+<text x="587.0" y="616.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">CLEAR_N</text>
+<line x1="438" y1="636" x2="452" y2="636" stroke="#17394b" stroke-width="1.5"/>
+<text x="461" y="639.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">5  VCC</text>
+<text x="587.0" y="639.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">3V3</text>
+<rect x="832" y="492" width="270" height="163" fill="#ffffff" stroke="#17394b"/>
+<text x="844" y="517.12" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#17394b">U4  SN74LVC1G08</text>
+<line x1="818" y1="544" x2="832" y2="544" stroke="#17394b" stroke-width="1.5"/>
+<text x="841" y="547.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">1  A</text>
+<text x="967.0" y="547.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">LATCH_Q</text>
+<line x1="818" y1="567" x2="832" y2="567" stroke="#17394b" stroke-width="1.5"/>
+<text x="841" y="570.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">2  B</text>
+<text x="967.0" y="570.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">MCU_PERMIT</text>
+<line x1="818" y1="590" x2="832" y2="590" stroke="#17394b" stroke-width="1.5"/>
+<text x="841" y="593.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">3  GND</text>
+<text x="967.0" y="593.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">GND</text>
+<line x1="818" y1="613" x2="832" y2="613" stroke="#17394b" stroke-width="1.5"/>
+<text x="841" y="616.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">4  Y</text>
+<text x="967.0" y="616.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">PERMIT_RAW</text>
+<line x1="818" y1="636" x2="832" y2="636" stroke="#17394b" stroke-width="1.5"/>
+<text x="841" y="639.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">5  VCC</text>
+<text x="967.0" y="639.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#087e85">3V3</text>
+<text x="72" y="705.48" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#17394b">U3: HW_OK = LOOP_OK AND RESET_N. U7: CLEAR_N = HW_OK AND MCU_READY. U4: PERMIT_RAW = LATCH_Q AND MCU_PERMIT. R8 connects</text>
+<text x="72" y="724.48" font-family="Arial,sans-serif" font-size="14" font-weight="400" fill="#17394b">PERMIT_RAW to J1 PERMIT_OUT; R9 holds the receiving test signal low.</text>
+<text x="72" y="758.84" font-family="Arial,sans-serif" font-size="12" font-weight="400" fill="#17394b">USB powers U1. All local logic uses U1 3V3; no external feed into that output. C1-C6 bypass U2-U7 locally; C8 is bulk entry capacitance.</text>
+<line x1="42" y1="789" x2="1148" y2="789" stroke="#17394b" stroke-width="1.5"/>
+<text x="42" y="811.02" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#17394b">Revision A | 13 Nov 2026 | Reference design - see release register and engineering specification</text>
+<text x="1050" y="811.02" font-family="Arial,sans-serif" font-size="11" font-weight="400" fill="#17394b">3 / 6</text>
+</svg>

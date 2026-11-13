@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ChristEye research response v1.0",
+  "type": "object",
+  "required": [
+    "question_id",
+    "star_id",
+    "status",
+    "claims",
+    "sources",
+    "alternatives",
+    "proposed_tests",
+    "falsifiers",
+    "uncertainties",
+    "build_decision",
+    "provenance"
+  ],
+  "properties": {
+    "question_id": {
+      "type": "string"
+    },
+    "star_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "ANSWERED",
+        "PARTIAL",
+        "UNRESOLVED",
+        "SOURCE_ACCESS_GAP"
+      ]
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "text",
+          "evidence_class",
+          "source_ids"
+        ],
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "evidence_class": {
+            "enum": [
+              "FINDING_IN_CITED_PREPARATION",
+              "CROSS_STUDY_INFERENCE",
+              "HYPOTHESIS",
+              "DESIGN_PROPOSAL"
+            ]
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array"
+    },
+    "alternatives": {
+      "type": "array"
+    },
+    "proposed_tests": {
+      "type": "array"
+    },
+    "falsifiers": {
+      "type": "array"
+    },
+    "uncertainties": {
+      "type": "array"
+    },
+    "build_decision": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "model_id",
+        "prompt_sha256",
+        "context_sha256",
+        "completed_at",
+        "retry_of"
+      ],
+      "properties": {
+        "model_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "prompt_sha256": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "context_sha256": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "completed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "retry_of": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

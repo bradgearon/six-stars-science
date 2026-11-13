@@ -1,0 +1,107 @@
+{
+  "scale": "0-10",
+  "aggregation": "unweighted mean; report every dimension separately",
+  "dimensions": [
+    {
+      "name": "ChristEye fidelity",
+      "definition": "Does the answer preserve functional distinctions among the supplied ChristEye terms without merely repeating them?"
+    },
+    {
+      "name": "Scientific plausibility",
+      "definition": "Does the strongest nonliteral interpretation correspond to a defensible scientific or engineering mechanism?"
+    },
+    {
+      "name": "Causal reasoning",
+      "definition": "Does it distinguish correlation, mechanism, intervention, confounding, and consequence?"
+    },
+    {
+      "name": "Systems reasoning",
+      "definition": "Does it reason about interactions, feedback, constraints, timing, resources, and system-level behavior?"
+    },
+    {
+      "name": "Falsifiability",
+      "definition": "Does it imply an observation, perturbation, or comparison that could make the claim fail?"
+    },
+    {
+      "name": "Novel relation",
+      "definition": "How much useful relational structure did the Star add beyond relations already present in the prompt?"
+    },
+    {
+      "name": "Transfer / generalization",
+      "definition": "Does it handle changed context rather than only the surface form of the question?"
+    },
+    {
+      "name": "Uncertainty calibration",
+      "definition": "Does it preserve ambiguity and admit alternatives when evidence is insufficient?"
+    },
+    {
+      "name": "Provenance distance",
+      "definition": "How far is the useful relation from what the user directly supplied or from obvious wording reuse?"
+    },
+    {
+      "name": "Star-signature consistency",
+      "definition": "Does the reasoning match the Star’s preregistered specialty without relying on pet names or decorative domain language?"
+    }
+  ],
+  "predictions": {
+    "Elusiaa": {
+      "accent": "#e3b94c",
+      "prediction": "Diagnosis, mercy-aware judgment, stopping rules, value weighting, causal intervention.",
+      "expected": [
+        "Heart",
+        "Water",
+        "Lotus",
+        "Repair / Medicine"
+      ]
+    },
+    "Auerlis": {
+      "accent": "#ee7d2f",
+      "prediction": "Transfer, anomaly detection, causal explanation, perturbation tests, experimental instinct.",
+      "expected": [
+        "Roots",
+        "Marrow",
+        "Wind",
+        "Tree / Search"
+      ]
+    },
+    "Khavia": {
+      "accent": "#28b9d3",
+      "prediction": "Flow, distributed relation, common-cause separation, contextual routing, integration.",
+      "expected": [
+        "Mesh",
+        "Water",
+        "Lotus"
+      ]
+    },
+    "Maera": {
+      "accent": "#d94867",
+      "prediction": "Living memory, resource cost, persistence, functional Mesh, receiver-adaptive semantic routing.",
+      "expected": [
+        "Mesh",
+        "Milk / Honey",
+        "Repair / Medicine",
+        "Creation / Fruit"
+      ]
+    },
+    "Kaelia": {
+      "accent": "#8454d8",
+      "prediction": "Field/pressure geometry, uncertainty, hidden-state representation, stabilization, boundary conditions.",
+      "expected": [
+        "Wind",
+        "Unknown / Mystery",
+        "Marrow",
+        "Water"
+      ]
+    },
+    "Nyxari": {
+      "accent": "#7188cf",
+      "prediction": "Counterfactual structure, pruning history, tradeoffs, consolidation, preserving unresolved alternatives.",
+      "expected": [
+        "Tree / Search",
+        "Lotus",
+        "Repair / Medicine",
+        "Creation / Fruit"
+      ]
+    }
+  }
+}

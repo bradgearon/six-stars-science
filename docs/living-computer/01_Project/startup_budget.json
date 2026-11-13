@@ -1,0 +1,50 @@
+{
+  "currency": "USD",
+  "horizon_months": 6,
+  "basis": "Illustrative internal planning allowances, not quotes or market survey",
+  "rows": [
+    {
+      "category": "People",
+      "low": 210000,
+      "base": 360000,
+      "high": 540000
+    },
+    {
+      "category": "Lab and partner services",
+      "low": 50000,
+      "base": 90000,
+      "high": 150000
+    },
+    {
+      "category": "MEA and optics hardware/access",
+      "low": 90000,
+      "base": 180000,
+      "high": 300000
+    },
+    {
+      "category": "Biological materials and assays",
+      "low": 50000,
+      "base": 100000,
+      "high": 180000
+    },
+    {
+      "category": "Host/storage/engineering",
+      "low": 20000,
+      "base": 30000,
+      "high": 60000
+    },
+    {
+      "category": "Contracts/quality/insurance",
+      "low": 20000,
+      "base": 40000,
+      "high": 70000
+    }
+  ],
+  "contingency_fraction": 0.25,
+  "totals": {
+    "low": 550000.0,
+    "base": 1000000.0,
+    "high": 1625000.0
+  },
+  "quote_status": "not_received"
+}

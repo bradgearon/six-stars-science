@@ -1,0 +1,114 @@
+[
+  {
+    "id": "EXT-01",
+    "title": "MaxOne product and interfaces",
+    "url": "https://www.mxwbio.com/products/maxone",
+    "use_and_limit": "Manufacturer; configuration and live inhibit still require confirmation",
+    "checked_date": "2026-11-13"
+  },
+  {
+    "id": "EXT-02",
+    "title": "MaxLab API 1.2.0 / MaxLab Live 26.1.1",
+    "url": "https://api-docs.mxwbio.com/index.html",
+    "use_and_limit": "Manufacturer API documentation; Python setup and C++ closed-loop access",
+    "checked_date": "2026-11-13"
+  },
+  {
+    "id": "EXT-03",
+    "title": "Raspberry Pi Pico board documentation",
+    "url": "https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html",
+    "use_and_limit": "Official board pin functions",
+    "checked_date": "2026-11-13"
+  },
+  {
+    "id": "EXT-04",
+    "title": "TPL5010 data sheet Rev A",
+    "url": "https://www.ti.com/lit/ds/symlink/tpl5010.pdf",
+    "use_and_limit": "Watchdog pins, timing and interval resistor",
+    "checked_date": "2026-11-13"
+  },
+  {
+    "id": "EXT-05",
+    "title": "SN74LVC1G08 data sheet",
+    "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+    "use_and_limit": "DBV pinout and electrical characteristics",
+    "checked_date": "2026-11-13"
+  },
+  {
+    "id": "EXT-06",
+    "title": "BrainXell spinal motor neurons",
+    "url": "https://brainxell.com/products/spinal-motor-neurons/",
+    "use_and_limit": "Source candidate; not confirmed compatibility",
+    "checked_date": "2026-11-13"
+  },
+  {
+    "id": "EXT-07",
+    "title": "BrainXell spinal astrocytes",
+    "url": "https://brainxell.com/products/spinal-astrocytes/",
+    "use_and_limit": "Source candidate; not confirmed compatibility",
+    "checked_date": "2026-11-13"
+  },
+  {
+    "id": "EXT-08",
+    "title": "ISSCR guidelines 2025 update",
+    "url": "https://www.isscr.org/resources/guidelines-for-stem-cell-research",
+    "use_and_limit": "Research guidance; applicability decided by laboratory",
+    "checked_date": "2026-11-13"
+  },
+  {
+    "id": "EXT-09",
+    "title": "SN74HC74 data sheet Rev F",
+    "url": "https://www.ti.com/lit/ds/symlink/sn74hc74.pdf",
+    "use_and_limit": "PDIP pinout and asynchronous clear",
+    "checked_date": "2026-11-13"
+  },
+  {
+    "id": "EXT-10",
+    "title": "SN74LVC1G17 data sheet",
+    "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf",
+    "use_and_limit": "DBV Schmitt buffer pinout",
+    "checked_date": "2026-11-13"
+  },
+  {
+    "id": "SCI-01",
+    "title": "Kagan et al. 2022 DishBrain",
+    "url": "https://doi.org/10.1016/j.neuron.2022.09.001",
+    "use_and_limit": "Prior v0.4 review; task precedent, not this preparation",
+    "checked_date": "2026-11-13"
+  },
+  {
+    "id": "SCI-02",
+    "title": "Robbins et al. 2026 cortical organoids",
+    "url": "https://doi.org/10.1016/j.celrep.2026.116984",
+    "use_and_limit": "Prior v0.4 review; short-term improvement and retention limitation",
+    "checked_date": "2026-11-13"
+  },
+  {
+    "id": "SCI-03",
+    "title": "Williamson et al. learning-associated astrocytes",
+    "url": "https://doi.org/10.1038/s41586-024-08170-w",
+    "use_and_limit": "Prior v0.4 review; in-vivo mouse recall",
+    "checked_date": "2026-11-13"
+  },
+  {
+    "id": "SCI-04",
+    "title": "Dewa et al. 2025 astrocytic trace",
+    "url": "https://doi.org/10.1038/s41586-025-09619-2",
+    "use_and_limit": "Prior v0.4 review; in-vivo stabilization",
+    "checked_date": "2026-11-13"
+  },
+  {
+    "id": "SCI-05",
+    "title": "Taga et al. 2019 spinal co-culture",
+    "url": "https://doi.org/10.1002/sctm.19-0147",
+    "use_and_limit": "Prior v0.4 review; regional maturation",
+    "checked_date": "2026-11-13"
+  },
+  {
+    "id": "SCI-06",
+    "title": "Osaki et al. 2024 connected organoids",
+    "url": "https://doi.org/10.1038/s41467-024-46787-7",
+    "use_and_limit": "Prior v0.4 review; physical joining precedent",
+    "checked_date": "2026-11-13"
+  }
+]

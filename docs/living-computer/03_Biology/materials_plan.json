@@ -1,0 +1,89 @@
+{
+  "policy": "No final biological order from unqualified numbers",
+  "materials": [
+    {
+      "id": "BIO-C-REF",
+      "role": "interface reference",
+      "source_candidate": "spinal motor neurons and compatible spinal astrocytes",
+      "cell_source_requirement": "qualified human iPSC-derived",
+      "lot": null,
+      "target_viable_per_preparation": null,
+      "preparations": null,
+      "measured_handling_yield": null,
+      "reserve_fraction": null,
+      "required_viable_total": null,
+      "medium_sop": null,
+      "release_record": null
+    },
+    {
+      "id": "BIO-C-DIV",
+      "role": "diverse core",
+      "source_candidate": "qualified spinal excitatory/inhibitory neurons and astrocytes",
+      "cell_source_requirement": "qualified human iPSC-derived",
+      "lot": null,
+      "target_viable_per_preparation": null,
+      "preparations": null,
+      "measured_handling_yield": null,
+      "reserve_fraction": null,
+      "required_viable_total": null,
+      "medium_sop": null,
+      "release_record": null
+    },
+    {
+      "id": "BIO-O",
+      "role": "observer",
+      "source_candidate": "same initial preparation as core, independent culture",
+      "cell_source_requirement": "qualified human iPSC-derived",
+      "lot": null,
+      "target_viable_per_preparation": null,
+      "preparations": null,
+      "measured_handling_yield": null,
+      "reserve_fraction": null,
+      "required_viable_total": null,
+      "medium_sop": null,
+      "release_record": null
+    },
+    {
+      "id": "BIO-S",
+      "role": "support policy",
+      "source_candidate": "same initial preparation as core, independent culture",
+      "cell_source_requirement": "qualified human iPSC-derived",
+      "lot": null,
+      "target_viable_per_preparation": null,
+      "preparations": null,
+      "measured_handling_yield": null,
+      "reserve_fraction": null,
+      "required_viable_total": null,
+      "medium_sop": null,
+      "release_record": null
+    },
+    {
+      "id": "BIO-B",
+      "role": "teaching recipient",
+      "source_candidate": "matched source, independent preparation",
+      "cell_source_requirement": "qualified human iPSC-derived",
+      "lot": null,
+      "target_viable_per_preparation": null,
+      "preparations": null,
+      "measured_handling_yield": null,
+      "reserve_fraction": null,
+      "required_viable_total": null,
+      "medium_sop": null,
+      "release_record": null
+    },
+    {
+      "id": "BIO-P",
+      "role": "source bank",
+      "source_candidate": "partner-maintained documented source bank",
+      "cell_source_requirement": "qualified human iPSC-derived",
+      "lot": null,
+      "target_viable_per_preparation": null,
+      "preparations": null,
+      "measured_handling_yield": null,
+      "reserve_fraction": null,
+      "required_viable_total": null,
+      "medium_sop": null,
+      "release_record": null
+    }
+  ]
+}
