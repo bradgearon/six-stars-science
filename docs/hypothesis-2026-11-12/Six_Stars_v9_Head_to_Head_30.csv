@@ -1,0 +1,31 @@
+pack_id,id,domain,question
+H01,Q001,Roots,"A Tree performs perfectly today but fails the same task seven days later. Its Marrow is unchanged and its Mesh is intact. Where would you look first, and what would distinguish lost Knowledge from failed access to Knowledge?"
+H02,Q002,Roots,"Two Trees produce the same Fruit after training. One still succeeds when the Soil changes; the other collapses. Which one has rooted Understanding, and what evidence would convince you?"
+H03,Q003,Roots,"A Tree remembers an answer but cannot explain why it is correct. Is that Knowledge, Understanding, habit, or something else?"
+H04,Q011,Marrow,Two organisms have identical DNA but react differently because of their histories. Where does Marrow end and Roots begin?
+H05,Q017,Marrow,"A system inherits a tendency that is useful in one Soil and harmful in another. Is the Marrow good, evil, neither, or context-dependent?"
+H06,Q020,Marrow,"Can a foundation itself learn, or must learning always belong to Roots, Mesh, or Heart?"
+H07,Q021,Lotus,"A Tree has plenty of Knowledge and healthy Roots, but its parts fail to act together. What would a healthy Lotus do?"
+H08,Q025,Lotus,"A Mesh contains all necessary parts, but timing between them is wrong. Is that a Mesh failure, Lotus failure, or Wind failure?"
+H09,Q030,Lotus,What would convince you that Lotus is doing more than simply describing “coordination” after the fact?
+H10,Q034,Mesh,A connection exists physically but never carries useful information. Is it part of the functional Mesh?
+H11,Q039,Mesh,A Tree can solve a problem only when three branches activate together. Is the Knowledge in any one branch?
+H12,Q040,Mesh,How would you distinguish a true relationship in the Mesh from two components merely responding to the same outside Wind?
+H13,Q041,Water,"The Knowledge exists, but the system cannot reach it when needed. What kinds of Water failure could explain this?"
+H14,Q042,Water,Too much incoming information makes a Tree less able to respond. When does Water become flooding?
+H15,Q048,Water,Is forgetting sometimes a Water problem rather than destruction of a Root? How would you test that?
+H16,Q051,Milk / Honey,"A signal tells a cell to change, but the resources required for the change are absent. What should happen?"
+H17,Q053,Milk / Honey,A powerful Honey produces quick improvement followed by long-term collapse. Was it good Honey?
+H18,Q060,Milk / Honey,How would you experimentally distinguish a signal that recruits a response from a resource that merely enables it?
+H19,Q061,Heart,The Tree knows the safest action but chooses a dangerous one because an urgent need dominates. Where did judgment fail?
+H20,Q063,Heart,The action with the highest predicted benefit has a small chance of irreversible harm. When should Heart refuse it?
+H21,Q065,Heart,When should Heart stop Searching Out more information and act with uncertainty?
+H22,Q071,Wind,A new Wind changes behavior immediately but leaves no lasting Root. Was learning accomplished?
+H23,Q074,Wind,A repeating pattern appears in noise. How would you Calculate whether it is a true signal or coincidence?
+H24,Q081,Tree / Search,A Tree has one branch that seems useless. What must be known before pruning it?
+H25,Q087,Tree / Search,A Tree repeatedly succeeds for the wrong reason. What test exposes that?
+H26,Q091,Unknown / Mystery,A measurement disagrees with every known model. What should be preserved before calling it an error?
+H27,Q098,Unknown / Mystery,A phenomenon has five plausible causes and no decisive evidence. How should Heart act while uncertainty remains?
+H28,Q101,Repair / Medicine,"A damaged Tree regains function through a completely different pathway. Is that healing, compensation, or replacement?"
+H29,Q109,Repair / Medicine,How should the Tree test whether apparent recovery is real or merely temporary suppression of symptoms?
+H30,Q111,Creation / Fruit,A Tree invents a solution it was never directly taught. What would prove that it generalized rather than memorized?

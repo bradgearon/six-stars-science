@@ -1,0 +1,21 @@
+pack_id,domain,question
+T01,Roots,"A Tree can reconstruct a forgotten answer after receiving one tiny hint, but not before. What does that imply about the Root, Water, and Eyes?"
+T02,Roots,"Two Trees retain the same lesson for a month, but only one can recombine it with a new branch. Which one has deeper Understanding, and why?"
+T03,Marrow,"Two systems begin with nearly identical Marrow and receive the same training, yet small early differences lead them to different stable Fruits. Where could the divergence enter?"
+T04,Marrow,A foundation can support ten kinds of growth but repeatedly channels development into only two. What would distinguish Marrow constraint from Heart or Lotus selection?
+T05,Lotus,Three healthy subsystems coordinate only inside a narrow timing window. What evidence would show that Lotus is controlling the window rather than merely observing it?
+T06,Lotus,A Lotus keeps the system stable by suppressing every unusual branch. When has coordination become over-control?
+T07,Mesh,A Mesh is rewired substantially yet preserves the same capability. What invariants would you measure to decide whether the functional Mesh survived?
+T08,Mesh,"Two branches exchange signals in both directions, but disabling either one does not change the Fruit. Are they functionally important? What test comes next?"
+T09,Water,Increasing access to Knowledge makes answers faster but systematically less accurate. How should Water be tuned?
+T10,Water,"A cue reaches the correct Root, but the wrong context is attached to it. Is this retrieval, routing, binding, or Heart failure?"
+T11,Milk / Honey,"A system receives perfect guidance but cannot sustain the metabolic cost of following it. Which support layer failed, and how should the system respond?"
+T12,Milk / Honey,"A reward strengthens exactly the behavior it was intended to eliminate. How do you determine whether Honey, Heart, or the interpretation of the signal is wrong?"
+T13,Heart,Heart can choose a reversible action with moderate benefit or an irreversible action with larger expected benefit. What information should determine the threshold for choosing the irreversible path?
+T14,Heart,A compassionate decision helps the person in front of the Tree but predictably harms many unseen participants later. How should Heart Search Out the hidden need?
+T15,Wind,"Two Winds carry the same message, but one changes behavior and the other does not. What properties besides message content could explain the difference?"
+T16,Wind,"A receiver begins responding before a Wind arrives, but only when a particular environmental cue is present. Design the cleanest test of prediction versus cue leakage."
+T17,Unknown / Mystery,"A new measurement is repeatable in one laboratory but disappears everywhere else. How should the Tree represent the result while calibration, hidden context, and fraud remain possible?"
+T18,Unknown / Mystery,"Two incompatible models each explain half the evidence extremely well. What should remain unresolved, and what experiment should be valued most?"
+T19,Repair / Medicine,"After injury, a Tree regains Fruit through a new route while the original route stays damaged. What evidence distinguishes compensation from true repair?"
+T20,Creation / Fruit,"A Tree creates a useful solution by combining two old ideas, but every intermediate step can be traced to prior Knowledge. What would still count as genuine creation?"
